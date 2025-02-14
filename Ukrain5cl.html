@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Українська мова 5 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h3 align="center">Українська мова 5 клас</h3>
+    <p><button><a href="title5cl.html">Повернутися</a></button></p>
+    <div align="right">
+</div>
+<div class="table-ukrmova-5cl">
+    <table>
+        <tr>
+            <th colspan="3">ЧАСТИНИ МОВИ</th>
+        </tr>
+        <tr>
+            <th colspan="3">Самостійні</th>
+        </tr>
+        <tr>
+            <td>Іменник</td>
+            <td>сонце</td>
+            <td>хто? що?</td>
+        </tr>
+        <tr>
+            <td>прикметник</td>
+            <td>сонячний</td>
+            <td>який? чий?</td>
+        </tr>
+        <tr>
+            <td>Числівник</td>
+            <td>два, другий</td>
+            <td>скільки? котрий?</td>
+        </tr>
+        <tr>
+            <td>Займенник</td>
+            <td>я, ти, ви, Ви, ми, він, вона, воно, вони</td>
+            <td>хто? що?</td>
+        </tr>
+        <tr>
+            <td>Дієслово</td>
+            <td>писати</td>
+            <td>що робити? що зробити?</td>
+        </tr>
+        <tr>
+            <td>Прислівник</td>
+            <td>сонячно, вдоиа, о десятій</td>
+            <td>як? де? коли? куди?</td>
+        </tr>
+        <tr>
+            <th colspan="3">Службові</th>
+        </tr>
+        <tr>
+            <td>Прийменник</td>
+            <td>на, в, з, до</td>
+            <td rowspan="3">Не відповідають на питання</td>
+        </tr>
+        <tr>
+            <td>Сполучник</td>
+            <td>і, й, та, але</td>
+        </tr>
+        <tr>
+            <td>Частка</td>
+            <td>не, б, хай</td>
+        </tr>
+    </table>
+
+    <div class="table-ukrmova-5cl-typsrosdumu">
+        <table>
+            <tr>
+                <th colspan="3">ТИПИ МОВЛЕННЯ</th>
+            </tr>
+            <tr>
+                <td>Розповідне</td>
+                <td>Опис</td>
+                <td>Роздум</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="table-ukrmova-5cl-vidirech">
+<table>
+    <tr>
+        <th colspan="3">ВИДИ РЕЧЕНЬ</th>
+    </tr>
+    <tr>
+        <td>За метою висловлювання</td>
+        <td>За емоційним забарвленням</td>
+        <td>За будовою</td>
+    </tr>
+    <tr>
+        <td>розповідне</td>
+        <td>окличне</td>
+        <td>просте</td>
+    </tr>
+    <tr>
+        <td>питальне</td>
+        <td>неокличне</td>
+        <td>складне</td>
+    </tr>
+    <tr>
+        <td>спонукальне</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<div class="table-ukrmova-5cl-leksikologiij">
+    <table>
+        <tr>
+            <th colspan="3">ЛЕКСИКОЛОГІЯ</th>
+        </tr>
+        <tr>
+            <td class="pp">Слова:
+                <ul>
+                    <li>однозначне</li>
+                    <li>багатозначні</li>
+                </ul>
+            </td>
+            <td class="pp">Значення слова:
+                <ul>
+                    <li>пряме</li>
+                    <li>переносне</li>
+                </ul>
+            </td>
+            <td class="pp">Слова: 
+                <ul>
+                    <li>загальновживані</li>
+                    <li>стилістично забарвлені</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <br> Синоніми: думати, мислити
+                <br> Антоніми: високий, низький
+                <br> Омоніми: коса (дівча), коса (знаряддя)
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-ukrmova-5cl-stylmovlennya">
+    <table>
+        <tr>
+            <th colspan="5">СТИЛІ МОВЛЕННЯ</th>
+        </tr>
+        <tr>
+            <td>Розмовний</td>
+            <td>Науковий</td>
+            <td>Художній</td>
+            <td>Публіцистичний</td>
+            <td>Офіційно-діловий</td>
+        </tr>
+    </table>
+</div>
+
+<div align="center">
+    <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+    <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="xP9ch0eeClw">
+        <img src="https://img.youtube.com/vi/xP9ch0eeClw/maxresdefault.jpg" alt="Обложка видео">
+        <div class="play-button">▶</div>
+    </div>
+    
+    <script>
+        function loadVideo(element) {
+            let videoId = element.getAttribute("data-video-id");
+            let iframe = document.createElement("iframe");
+            iframe.width = "560";
+            iframe.height = "315";
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTregIBVBdkbsDu2LeeipV5kc&index=10`;
+            iframe.frameBorder = "0";
+            iframe.allow = "autoplay; encrypted-media";
+            iframe.allowFullscreen = true;
+    
+            element.innerHTML = ""; // Очищаем блок
+            element.appendChild(iframe); // Вставляем видео
+        }
+    </script>
+</div>
+
+ 
+
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+<div class="a">
+<div class="container">
+    <div id="quiz">
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+    </div>
+    <div id="result"></div>
+</div>
+<script>
+    const quizData = [
+            {
+                question: "Визначте речення, в якому є однорідні члени речення.",
+                options: [
+                    "В небі, у ріках блакить, як цю красу не любить?",
+                    "Любимо землю свою рідну.",
+                    "Образ цей не зблідне, хоч минуть жнива.",
+                    "Небеса блакитні сяють з глибини."
+                ],
+                answer: "В небі, у ріках блакить, як цю красу не любить?"
+            },
+            {
+                question: "Вкажіть речення, у якому є однорідні члени речення і вони з'єднані сполучником.",
+                options: [
+                    "Князь Ярослав Мудрий мав нахил до книг.",
+                    "Запалай, мій вогнику крилатий, полум'ям привітним.",
+                    "Це знамено рідне - злото й синява.",
+                    "За одну книгу можна було купити ціле село з людьми."
+                ],
+                answer: "Це знамено рідне - злото й синява."
+            },
+            {
+                question: "В якому з варіантів є однорідні члени речення з узагальнювальним словом:",
+                options: [
+                    "Великого розквіту набуло українське прапорництво в козацьку добу.",
+                    "Символіка представляє країну, підтверджує її існування.",
+                    "Я зробив усі завдання: розв'язав задачі, написав вправу.",
+                    "Жовтий колір - це колір пшеничної ниви, хліба, зерна, жовтогарячого сонця."
+                ],
+                answer: "Жовтий колір - це колір пшеничної ниви, хліба, зерна, жовтогарячого сонця."
+            },
+            {
+                question: "У якому з варіантів потрібно ставити двокрапку після узагальнювального слова:",
+                options: [
+                    "Над широкими сіножатями, над зеленими ярами став легесенький туман.",
+                    "У нашому саду ростуть дерева вишня, абрикоса, черешня.",
+                    "І соняшник, і кукурудза, і криниця все вслухалось у свіжість.",
+                    "Праця чоловіка годує, а лінь марнує."
+                ],
+                answer: "У нашому саду ростуть дерева вишня, абрикоса, черешня."
+            },
+            {
+                question: "Вкажіть речення, в якому є звертання: (розділові знаки пропущено)",
+                options: [
+                    "Ти зробив домашнє завдання?",
+                    "Пробачте повернусь не скоро.",
+                    "Мабуть весна принесе з собою і радість.",
+                    "Вишийте мамо сорочку мені."
+                ],
+                answer: "Вишийте мамо сорочку мені."
+            },
+            {
+                question: "Вкажіть, у якому з варіантів вжито речення зі вставним словом: (розділові знаки пропущено)",
+                options: [
+                    "Погода сьогодні дуже гарна.",
+                    "Колись розвіються ці тучі.",
+                    "Весна нам принесе з собою і радість.",
+                    "Ви звичайно знаєте мою сестру."
+                ],
+                answer: "Ви звичайно знаєте мою сестру."
+            },
+            {
+                question: "Визначте яке з речень складне.",
+                options: [
+                    "За одну книгу можна було купити ціле село з людьми, землею й майном.",
+                    "Стерня не завжди золота, але колюча для всіх і завжди.",
+                    "Квітне-веснує земля, рястом синіють поля.",
+                    "Отже, що тут багато говорити й сперечатися."
+                ],
+                answer: "За одну книгу можна було купити ціле село з людьми, землею й майном."
+            },
+            {
+                question: "У якому варіанті правильно розставлені розділові знаки?",
+                options: [
+                    "Живи Україно, живи для краси, для сили, для правди для волі!.. (О. Олесь)",
+                    "Живи, Україно, живи для краси, для сили, для правди, для волі!.. (О. Олесь)",
+                    "Живи, Україно живи для краси, для сили, для правди, для волі!.. (О. Олесь)",
+                    "Живи, Україно, живи для краси для сили, для правди, для волі!.. (О. Олесь)"
+                ],
+                answer: "Живи, Україно, живи для краси, для сили, для правди, для волі!.. (О. Олесь)"
+            },
+            {
+                question: "У якому варіанті представлено речення з однорідними присудками?",
+                options: [
+                    "Сонечко яскраве гріє весело та радісно.",
+                    "Сині і жовті барви для прапора використовувалися під час війни під проводом Б. Хмельницького.",
+                    "Маки там не цвітуть, а горять.",
+                    "Прапор виник ще за античних часів і поширився в Європі в добу Середньовіччя."
+                ],
+                answer: "Сонечко яскраве гріє весело та радісно."
+            },
+            {
+                question: "У якому варіанті представлено речення з однорідними присудками?",
+                options: [
+                    "Читав їх удень і вночі.",
+                    "У книгозбірні були літописи, Євангеліє, збірки мудрих висловлювань.",
+                    "Князь Ярослав Мудрий мав нахил до книг.",
+                    "Символіка представляє країну, підтверджує її існування."
+                ],
+                answer: "Читав їх удень і вночі."
+            }
+        ];
+           
+
+
+    let currentQuestion = 0;
+    let score = 0;
+
+
+    function loadQuestion() {
+        if (currentQuestion < quizData.length) {
+            document.getElementById("question").innerText = quizData[currentQuestion].question;
+            let optionsHtml = "";
+            quizData[currentQuestion].options.forEach(option => {
+                optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+            });
+            document.getElementById("options").innerHTML = optionsHtml;
+        } else {
+            document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+            document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+        }
+    }
+
+    function checkAnswer(button, answer) {
+        const buttons = document.querySelectorAll(".options button");
+        buttons.forEach(btn => btn.disabled = true);
+        
+        if (answer === quizData[currentQuestion].answer) {
+            button.classList.add("correct");
+            score++;
+        } else {
+            button.classList.add("wrong");
+            buttons.forEach(btn => {
+                if (btn.innerText === quizData[currentQuestion].answer) {
+                    btn.classList.add("correct");
+                }
+            });
+        }
+        setTimeout(() => {
+            currentQuestion++;
+            loadQuestion();
+        }, 1500);
+    }
+
+    loadQuestion();
+</script>
+</div>
+
+</body>
+</html>

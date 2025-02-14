@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Фізика 8 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+         
+    <h2 align="center">Фізика 8 клас</h2>
+
+    <p><button><a href="title8cl.html">Повернутися</a></button></p>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Механічний рух</th>
+        </tr>
+        <tr>
+            <td>Механічний рух — це зміна положення тіла в просторі відносно інших тіл за певний проміжок часу. Виділяють прямолінійний, криволінійний, рівномірний та нерівномірний рух.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Швидкість</th>
+        </tr>
+        <tr>
+            <td>Швидкість — це фізична величина, що показує, яку відстань тіло проходить за одиницю часу. Формула: V=S/t.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Сила</th>
+        </tr>
+        <tr>
+            <td>Сила — це векторна величина, що змінює стан спокою або руху тіла. Вимірюється в ньютонах (Н). Формула: A=F*S</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Масa і вага</th>
+        </tr>
+        <tr>
+            <td>Маса — кількість речовини в тілі, вимірюється в кілограмах (кг). Вага — сила тяжіння, що діє на тіло, вимірюється в ньютонах. Формула: P=m*g</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Енергія</th>
+        </tr>
+        <tr>
+            <td>Енергія — це фізична величина, що характеризує здатність тіла виконувати роботу. Існують різні види енергії: кінетична, потенційна, механічна.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Закон збереження енергії</th>
+        </tr>
+        <tr>
+            <td>Закон збереження енергії говорить, що енергія в замкнутій системі зберігається, не зникає і не виникає з нічого, а лише переходить з одного виду в інший.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Теплота і температура</th>
+        </tr>
+        <tr>
+            <td>Температура — це міра середньої кінетичної енергії молекул тіла. Теплота — енергія, що передається від тіла з більшою температурою до тіла з меншою.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Теплопередача</th>
+        </tr>
+        <tr>
+            <td>Теплопередача може відбуватися трьома способами: теплопровідність (через тіла), конвекція (рух рідин і газів) і випромінювання (електромагнітні хвилі).</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Електричний струм</th>
+        </tr>
+        <tr>
+            <td>Електричний струм — це впорядкований рух заряджених частинок (електронів) у провіднику. Вимірюється в амперах (А). Формула: I=Q/t, де I-сила струму, Q-заряд, t-час</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Омічний закон</th>
+        </tr>
+        <tr>
+            <td>Омічний закон: R=U/I. Опір залежить від матеріалу, довжини і площі поперечного перерізу провідника.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-8cl">
+        <tr>
+            <th>Електричні кола</th>
+        </tr>
+        <tr>
+            <td>Електричне коло — це замкнуте коло, в якому є джерело струму (наприклад, батарея) і споживачі (лампочки, резистори). Закон Кірхгофа описує взаємодію струму в колі.</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'xLnwf3zzz6c', 'PLsWyMT6uUTrcIz_mI4pXxT38B0HyaLyr3', 30)">
+        <img src="https://img.youtube.com/vi/xLnwf3zzz6c/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Фізика
+            {
+                question: "Що таке сила?",
+                options: ["Властивість тіла змінювати свою форму", "Величина, яка визначає здатність тіла до руху", "Величина, що викликає зміну руху або форми тіла", "Швидкість, з якою рухається тіло"],
+                answer: "Величина, що викликає зміну руху або форми тіла"
+            },
+            {
+                question: "Що таке прискорення?",
+                options: ["Це зміна швидкості тіла за одиницю часу", "Це зміна сили за одиницю часу", "Це змінна маса тіла", "Це відстань, яку тіло проходить за одиницю часу"],
+                answer: "Це зміна швидкості тіла за одиницю часу"
+            },
+            {
+                question: "Як визначається швидкість?",
+                options: ["Шлях, поділений на масу", "Шлях, поділений на час", "Час, поділений на шлях", "Масу, поділену на час"],
+                answer: "Шлях, поділений на час"
+            },
+            {
+                question: "Яка одиниця вимірювання сили в системі СІ?",
+                options: ["Ньютон (Н)", "Кілограм (кг)", "Метр (м)", "Джоуль (Дж)"],
+                answer: "Ньютон (Н)"
+            },
+            {
+                question: "Що таке температура?",
+                options: ["Міра середньої кінетичної енергії молекул", "Міра середнього швидкості молекул", "Міра сили, з якою молекули взаємодіють", "Міра маси молекул"],
+                answer: "Міра середньої кінетичної енергії молекул"
+            },
+            {
+                question: "Що таке теплопровідність?",
+                options: ["Переміщення тепла від гарячих тіл до холодних", "Переміщення молекул в середині тіла", "Переміщення тепла через вакуум", "Зміна температури речовини"],
+                answer: "Переміщення тепла від гарячих тіл до холодних"
+            },
+            {
+                question: "Яка одиниця вимірювання тепла в системі СІ?",
+                options: ["Джоуль (Дж)", "Калорія (кал)", "Градус Цельсія (°C)", "Ват (Вт)"],
+                answer: "Джоуль (Дж)"
+            },
+            {
+                question: "Що таке електричний струм?",
+                options: ["Переміщення електронів по провіднику", "Переміщення заряджених частинок у вакуумі", "Напруга між двома точками", "Механізм взаємодії між електричними зарядами"],
+                answer: "Переміщення електронів по провіднику"
+            },
+            {
+                question: "Яка одиниця вимірювання напруги в системі СІ?",
+                options: ["Вольт (В)", "Ампер (А)", "Ом (Ω)", "Ват (Вт)"],
+                answer: "Вольт (В)"
+            },
+            {
+                question: "Що таке магнітне поле?",
+                options: ["Сила, що виникає навколо електричних заряджених тіл", "Сила, що виникає між двома зарядженими частинками", "Простір навколо магніту, в якому відчувається його дія", "Рух молекул в провідниках"],
+                answer: "Простір навколо магніту, в якому відчувається його дія"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+
+
+
+</body>
+</html>

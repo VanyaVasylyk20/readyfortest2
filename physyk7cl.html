@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Фізика 7 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <h2 align="center">Фізика 7 клас</h2>
+
+    <p><button><a href="title7cl.html">Повернутися</a></button></p>
+     
+     <table class="table-physyk-7cl">
+        <tr>
+            <th>Механічний рух</th>
+        </tr>
+        <tr>
+            <td>Тіло перебуває в русі, якщо змінює своє положення відносно інших тіл. Існують види руху: прямолінійний, криволінійний.</td>
+        </tr>
+     </table>
+
+     <table class="table-physyk-7cl">
+        <tr>
+            <th>Прямолінійний рівномірний рух</th>
+        </tr>
+        <tr>
+            <td>Рух, у якому тіло за рівні інтервали часу проходить однакову відстань.</td>
+        </tr>
+     </table>
+
+     <table class="table-physyk-7cl">
+        <tr>
+            <th>Швидкість руху</th>
+        </tr>
+        <tr>
+            <td>Швидкість характеризує, як швидко змінюється положення тіла в просторі.</td>
+        </tr>
+     </table>
+
+     <table class="table-physyk-7cl">
+        <tr>
+            <th>Архімедова сила</th>
+        </tr>
+        <tr>
+            <td>Виштовхувальна сила, що діє на тіло, занурене в рідину або газ.</td>
+        </tr>
+     </table>
+
+     <table class="table-physyk-7cl">
+        <tr>
+            <th>Робота</th>
+        </tr>
+        <tr>
+            <td>Робота виконується, якщо на тіло діє сила і воно переміщується</td>
+        </tr>
+     </table>
+
+     <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+     <div align="center">
+
+     <div class="video-wrapper" onclick="loadPlaylist(this)">
+        <img src="https://img.youtube.com/vi/2FNr_mq3DgQ/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+    
+    <script>
+        function loadPlaylist(element) {
+            let iframe = document.createElement("iframe");
+            iframe.width = "560";
+            iframe.height = "315";
+            iframe.src = "https://www.youtube.com/embed/2FNr_mq3DgQ?list=PLsWyMT6uUTre3XZkb9ihMCCVcbA7Sfg8d&index=17&autoplay=1"; // Оновлене посилання
+            iframe.frameBorder = "0";
+            iframe.allow = "autoplay; encrypted-media";
+            iframe.allowFullscreen = true;
+    
+            element.innerHTML = ""; // Очищаємо блок
+            element.appendChild(iframe); // Вставляємо відео
+        }
+    </script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+ <div>
+
+<div class="container">
+<div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Початкові поняття фізики
+            {
+                question: "Що вивчає фізика?",
+                options: ["Живі організми", "Явища природи, будову і властивості речовин", "Географічні об'єкти", "Історичні події"],
+                answer: "Явища природи, будову і властивості речовин"
+            },
+            {
+                question: "Одиниця вимірювання довжини в СІ:",
+                options: ["Кілограм", "Секунда", "Метр", "Градус"],
+                answer: "Метр"
+            },
+            {
+                question: "Що називають фізичним явищем?",
+                options: ["Будь-яку подію", "Процес, який можна спостерігати та описати фізичними величинами", "Лише зміни температури", "Зміни в живій природі"],
+                answer: "Процес, який можна спостерігати та описати фізичними величинами"
+            },
+            // Механічний рух
+            {
+                question: "Механічний рух — це…",
+                options: ["Зміна положення тіла відносно інших тіл з часом", "Будь-який рух", "Рух тільки в повітрі", "Рух тільки на воді"],
+                answer: "Зміна положення тіла відносно інших тіл з часом"
+            },
+            {
+                question: "Швидкість позначається літерою:",
+                options: ["s", "t", "v", "m"],
+                answer: "v"
+            },
+            {
+                question: "Формула для розрахунку швидкості рівномірного руху:",
+                options: ["v = s × t", "v = s / t", "v = t / s", "v = s + t"],
+                answer: "v = s / t"
+            },
+            // Сила та закони Ньютона
+            {
+                question: "Якою літерою позначається сила?",
+                options: ["v", "F", "m", "s"],
+                answer: "F"
+            },
+            {
+                question: "Одиниця сили в СІ:",
+                options: ["Ньютон (Н)", "Кілограм (кг)", "Паскаль (Па)", "Метр (м)"],
+                answer: "Ньютон (Н)"
+            },
+            {
+                question: "Вкажіть третій закон Ньютона:",
+                options: ["Сума всіх сил дорівнює масі тіла, помноженій на прискорення", "Тіло зберігає стан спокою або рівномірного прямолінійного руху, якщо на нього не діють сили", "Сила дії дорівнює силі протидії, але напрямлені вони в протилежні сторони", "Сила тяжіння діє на всі тіла"],
+                answer: "Сила дії дорівнює силі протидії, але напрямлені вони в протилежні сторони"
+            },
+            // Робота, потужність, енергія
+            {
+                question: "Яка формула для обчислення роботи?",
+                options: ["A = F × s", "A = F / s", "A = F + s", "A = F × t"],
+                answer: "A = F × s"
+            },
+            {
+                question: "Яка одиниця вимірювання роботи в СІ?",
+                options: ["Ват (Вт)", "Джоуль (Дж)", "Паскаль (Па)", "Ньютон (Н)"],
+                answer: "Джоуль (Дж)"
+            },
+            {
+                question: "Потужність вимірюється у:",
+                options: ["Ватах", "Ньютонах", "Джоулях", "Мегапаскалях"],
+                answer: "Ватах"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика 6 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Математика 6 клас</h2>
+    <p><button><a href="title6cl.html">Повернутися</a></button></p>
+
+    <table class="table-matchs-6cl">
+        <tr>
+            <th>Пряма пропорційна залежність</th>
+        </tr>
+        <tr>
+            <td>Дві величини, відношення відповідних значень яких є ста- лим, називають 
+                прямо пропорційними. Зі збільшенням (зменшенням) значень однієї з 
+                прямо про- порційних величин у кілька разів значення другої вели чини 
+                збільшується (зменшується) у стільки само разів.
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-matchs-6cl">
+        <tr>
+            <th>Обернена пропорційна залежність</th>
+        </tr>
+        <tr>
+            <td>Дві величини, добуток відповідних значень яких є сталим, 
+                називають обернено пропорційними. Зі збільшенням (зменшенням) значення однієї з обернено 
+                пропорційних величин у кілька разів значення другої величини зменшується (збільшується) 
+                у таку саму кіль кість разів.
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-matchs-6cl">
+        <tr>
+            <th>Масштаб</th>
+        </tr>
+        <tr>
+            <td>Відношення довжини відрізка на карті (чи плані) до довжини відповідного відрізка на місцевості 
+                називають масштабом карти (чи плану).Масштаб 1: 2000 означає, що одному сантиметру
+                 на плані відповідає 2000 см, тобто 20 м на місцевості.
+            </td>
+        </tr>
+        </table>
+
+        <table class="table-matchs-6cl">
+        <tr>
+            <th>Ознаки подільності</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>на 2 діляться всі ті натуральні числа, запис яких закінчується парною цифрою;</li>
+                    <li>на 5 діляться всі ті натуральні числа, запис яких закін чується цифрою 0 або цифрою 5;</li>
+                    <li>на 10 діляться всі ті натуральні числа, запис яких закін- чується цифрою 0;</li>
+                    <li>на 3 діляться всі ті натуральні числа, сума цифр яких ділиться на 3; </li>
+                    <li>на 9 діляться всі ті натуральні числа, сума цифр яких ді литься на 9.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+        <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="9SBKCDxzwaY">
+            <img src="https://img.youtube.com/vi/9SBKCDxzwaY/maxresdefault.jpg" alt="Обложка видео">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadVideo(element) {
+                let videoId = element.getAttribute("data-video-id");
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTrcKAZTemc8acuDwZI_j1VZW&index=10`;
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаємо блок
+                element.appendChild(iframe); // Вставляємо відео
+            }
+        </script>
+    </div>
+    <h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+    <div class="container">
+        <div class="a">
+            <div id="quiz">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+            </div>
+            <div id="result"></div>
+        </div>
+     
+        <script>
+            const quizData = [
+                {
+                    question: "Знайдіть радіус кола, якщо діаметр 10 сантиметрів:",
+                    options: ["40", "10", "20", "5"],
+                    answer: "5"
+                },
+                {
+                    question: "Який із запропонованих дробів правильний?",
+                    options: ["4/3", "4/4", "5/4", "4/5"],
+                    answer: "4/5"
+                },
+                {
+                    question: "Трійка коней за 1 год пробігла 15 км. Скільки кілометрів пробіг один кінь?",
+                    options: ["45", "15", "30"],
+                    answer: "15"
+                },
+                {
+                    question: "Розв'яжіть рівняння: 17х - 8х = 3,528",
+                    options: ["0,0392", "3,92", "0,392", "39,2"],
+                    answer: "0,392"
+                },
+                {
+                    question: "Який знак треба поставити між 2,65 і (26,5 : 0,1) ?",
+                    options: [">", "=", "<"],
+                    answer: "<"
+                },
+                {
+                    question: "Розв'яжіть рівняння: ( х + 12,6) : 2,4 = 12,15",
+                    options: ["70,21", "7,5375", "2,875", "16,56"],
+                    answer: "16,56"
+                },
+                {
+                    question: "Укажіть пару протилежних чисел",
+                    options: ["3 і ⅓", "5 і 0,5", "3 і –3", "17 і –71"],
+                    answer: "3 і –3"
+                },
+                {
+                    question: "Оберіть число, що є кратним числам 8 і 12",
+                    options: ["12", "24", "8", "20"],
+                    answer: "24"
+                },
+                {
+                    question: "Скільки відсотків становить 4 кг від 5 кг?",
+                    options: ["20%", "40%", "80%", "50%"],
+                    answer: "80%"
+                },
+                {
+                    question: "Площа круга складає 100 квадратних сантиметрів, яку площу має ¼ частина круга",
+                    options: ["2,5", "10", "25", "20"],
+                    answer: "25"
+                },
+                {
+                    question: "Чому дорівнює квадрат числа ( – 0,2)?",
+                    options: ["0,4", "0,04", "- 0,04", "- 0,4"],
+                    answer: "0,04"
+                },
+                {
+                    question: "Стрічку розрізали на дві частини. Довжина другої частини на 3 м більша, ніж довжина першої, причому довжина першої частини становить ⅘ довжини другої. Яка довжина кожної частини?",
+                    options: ["12; 17", "12; 15", "15; 17", "4; 5"],
+                    answer: "12; 15"
+                },
+                {
+                    question: "Обчислити 5 / 7 – 2 / 3",
+                    options: ["1/7", "1/21", "1/3", "1/10"],
+                    answer: "1/21"
+                }
+            ];
+           
+            let currentQuestion = 0;
+            let score = 0;
+        
+            function loadQuestion() {
+                if (currentQuestion < quizData.length) {
+                    document.getElementById("question").innerText = quizData[currentQuestion].question;
+                    let optionsHtml = "";
+                    quizData[currentQuestion].options.forEach(option => {
+                        optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                    });
+                    document.getElementById("options").innerHTML = optionsHtml;
+                } else {
+                    document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                    document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+                }
+            }
+        
+            function checkAnswer(button, answer) {
+                const buttons = document.querySelectorAll(".options button");
+                buttons.forEach(btn => btn.disabled = true);
+                
+                if (answer === quizData[currentQuestion].answer) {
+                    button.classList.add("correct");
+                    score++;
+                } else {
+                    button.classList.add("wrong");
+                    buttons.forEach(btn => {
+                        if (btn.innerText === quizData[currentQuestion].answer) {
+                            btn.classList.add("correct");
+                        }
+                    });
+                }
+                setTimeout(() => {
+                    currentQuestion++;
+                    loadQuestion();
+                }, 1500);
+            }
+        
+            loadQuestion();
+        </script>
+    </div>
+
+
+
+</body>
+</html>

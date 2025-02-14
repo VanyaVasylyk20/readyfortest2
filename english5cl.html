@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Англійська 5 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Англійська мова 5 клас</h2>
+
+    <p><button><a href="title5cl.html">Повернутися</a></button></p>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th colspan="2">Артиклі</th>
+        </tr>
+        <tr>
+            <th>Артикль</th>
+            <th>Вживання</th>
+        </tr>
+        <tr>
+            <th>The</th>
+            <td>Визначиний артиель, вказує на конкретний об'єкт. Наприклад:"The cat".</td>
+        </tr>
+        <tr>
+            <th>A/An</th>
+            <td>Неозначений артикль, вказує на будь-який об'єкт. Наприклад: "A dog", "an apple"</td>
+        </tr>
+    </table>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th colspan="2">Множина іменників</th>
+        </tr>
+        <tr>
+            <th>Однина</th>
+            <th>Множина</th>
+        </tr>
+        <tr>
+            <th>Cat</th>
+            <td>Cats</td>
+    </table>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th>Порядок слів в реченні</th>
+        </tr>
+        <tr>
+            <td>Підмет + присудок + пряме доповнення: He reads books</td>
+        </tr>
+    </table>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th>Прийменники місця та напрямку</th>
+        </tr>
+        <tr>
+            <td> "In", "on", "under", "behind", "next to"</td>
+        </tr>
+    </table>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th colspan="2">Вживання For, During і While</th>
+        </tr>
+        <tr>
+            <th>Слово</th>
+            <th>Вживання</th>
+        </tr>
+        <tr>
+            <th>For</th>
+            <td>Вказує на тривалість дії: “I studied for two hours.”</td>
+        </tr>
+        <tr>
+            <th>During</th>
+            <td>Вказує на період часу: “I read a book during the flight.”</td>
+        </tr>
+        <tr>
+            <th>While</th>
+            <td>Вказує на одночасність двох дій: “She listened to music while doing homework.”</td>
+        </tr>
+    </table>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th colspan="2">Вживання like і as</th>
+        </tr>
+        <tr>
+            <th>Слово</th>
+            <th>Вживання</th>
+        </tr>
+        <tr>
+            <th>Like</th>
+            <td>Вказує на подібність: “She sings like a bird.”</td>
+        </tr>
+        <tr>
+            <th>As</th>
+            <td>Вказує на рівність: “He runs as fast as his friend.”</td>
+        </tr>
+    </table>
+
+    <table class="table-english-5cl">
+        <tr>
+            <th colspan="2">Вживання So і Such</th>
+        </tr>
+        <tr>
+            <th>Слово</th>
+            <th>Вживання</th>
+        </tr>
+        <tr>
+            <th>So</th>
+            <td>Вказує на наслідок: “It was raining, so we stayed indoors.”</td>
+        </tr>
+        <tr>
+            <th>Such</th>
+            <td>Вказує на характеристику: “She has such a beautiful voice.”</td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+        <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="gQlzrJ5kfkU">
+            <img src="https://img.youtube.com/vi/gQlzrJ5kfkU/maxresdefault.jpg" alt="Обложка видео">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadVideo(element) {
+                let videoId = element.getAttribute("data-video-id");
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTrdSp3g52o9JwNTp1yZCzU8C`;
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаем блок
+                element.appendChild(iframe); // Вставляем видео
+            }
+        </script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+<div class="a">
+    <div class="container">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        const quizData = [
+            {
+                question: "______did you go to London? - Last summer.",
+                options: [
+                    "What",
+                    "When",
+                    "Who"
+                ],
+                answer: "When"
+            },
+            {
+                question: "I ... an English test now.",
+                options: [
+                    "is doing",
+                    "are doing",
+                    "am doing"
+                ],
+                answer: "am doing"
+            },
+            {
+                question: "They ... to school yesterday.",
+                options: [
+                    "go",
+                    "went",
+                    "is going"
+                ],
+                answer: "went"
+            },
+            {
+                question: "Were you at school yesterday? No, I............",
+                options: [
+                    "am not",
+                    "wasn't",
+                    "weren't"
+                ],
+                answer: "wasn't"
+            },
+            {
+                question: "How ................ apples do you want?",
+                options: [
+                    "much",
+                    "many",
+                    "any"
+                ],
+                answer: "many"
+            },
+            {
+                question: "He is the _ _ _ doctor.",
+                options: [
+                    "famous",
+                    "more famous",
+                    "the most famous"
+                ],
+                answer: "the most famous"
+            },
+            {
+                question: "The weather is _ _ _ than yesterday.",
+                options: [
+                    "good",
+                    "better",
+                    "gooder"
+                ],
+                answer: "better"
+            },
+            {
+                question: "Past Simple це",
+                options: [
+                    "Теперішній доконаний час",
+                    "Майбутній час",
+                    "Майбутній тривалий час",
+                    "Простий минулий час"
+                ],
+                answer: "Простий минулий час"
+            },
+            {
+                question: "В англійській мові в якому часі використовуються слова 'do, does'?",
+                options: [
+                    "Present Simple",
+                    "Past Perfect",
+                    "Future in the past",
+                    "Немає правильного варіанта"
+                ],
+                answer: "Present Simple"
+            },
+            {
+                question: "____you ____ to go to the cinema?",
+                options: [
+                    "Did, wanted",
+                    "Do, want",
+                    "Did, want"
+                ],
+                answer: "Did, want"
+            },
+            {
+                question: "Mary did not ___ to ___ the history.",
+                options: [
+                    "wanted, learn",
+                    "want, learnt",
+                    "wanted, learnt",
+                    "want, learn"
+                ],
+                answer: "want, learn"
+            },
+            {
+                question: "What ___ you ___ yesterday?",
+                options: [
+                    "did, did",
+                    "do, do",
+                    "did, do",
+                    "do, did"
+                ],
+                answer: "did, do"
+            },
+            {
+                question: "I ___ my friend for lunch last Monday.",
+                options: [
+                    "bought",
+                    "met",
+                    "let",
+                    "want"
+                ],
+                answer: "met"
+            },
+            {
+                question: "-Where_____he______chess with his brother? -In the living room",
+                options: [
+                    "did, played",
+                    "did,play",
+                    "didn't,play"
+                ],
+                answer: "did,play"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+    </div>
+    
+</body>
+</html>

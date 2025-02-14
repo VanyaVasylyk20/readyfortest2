@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <title>Українська мова 6 клас</title>
+</head>
+<body>
+    <h2 align="center">Українська мова 6 клас</h2>
+
+    <p><button><a href="title6cl.html">Повернутисяі</a></button></p>
+
+    <table class="table-ukrmova-6cl">
+        <tr>
+            <th colspan="5">ЧАСТИНИ МОВИ</th>
+        </tr>
+        <tr>
+            <th>Назва частини мови</th>
+            <th>Загальне значення</th>
+            <th>Морфологічні ознаки</th>
+            <th>Синтаксична роль</th>
+            <th>На які питання відповідає</th>
+        </tr>
+        <tr>
+            <th colspan="5">Самостійні</th>
+        </tr>
+        <tr>
+            <th>Іменник</th>
+            <td>означає предмет</td>
+            <td>належить до певного роду, змінюємо за числами та відмінками</td>
+            <td>найчастіше буває підметом, додатком, обставиною</td>
+            <td>хто? що?</td>
+        </tr>
+        <tr>
+            <th>Прикметник</th>
+            <td>означає ознаку предмета</td>
+            <td>змінюємо за родами, числами, відмінками</td>
+            <td>означення, присудак</td>
+            <td>який? чий?</td>
+        </tr>
+        <tr>
+            <th>Числівник</th>
+            <td>означає кількість, число, порядок предметів під час лічби</td>
+            <td>змінюємо за відмінками, деякі- за числами й родами</td>
+            <td>найчастіше буває підметом, означенням, додатком</td>
+            <td>скільки? котрий?</td>
+        </tr>
+        <tr>
+            <th>Займенник</th>
+            <td>вказує на особу, предмет, ознаку, кількість</td>
+            <td>змінюємо за відмінками, деякі- за числами, родами</td>
+            <td>найчастіше підмет, додаток, означення</td>
+            <td>хто? що? який? чий?</td>
+        </tr>
+        <tr>
+            <th>Дієслово</th>
+            <td>означає дію предмета</td>
+            <td>більшість змінюємо за часами, числами деякі- за особами, родами</td>
+            <td>найчастіше буває присудком</td>
+            <td>що робити? що зробити?</td>
+        </tr>
+        <tr>
+            <th>Прислівник</th>
+            <td>означає ознаку дії</td>
+            <td>не змінюємо</td>
+            <td>обставина</td>
+            <td>як? де? куди? коли? чому? та ін.</td>
+        </tr>
+        <tr>
+            <th colspan="5">Службові</th>
+        </tr>
+        <tr>
+            <th>Прийменник</th>
+            <td rowspan="3">не мають</td>
+            <td rowspan="3">не змінюємо</td>
+            <td rowspan="3">не бувають членами речення</td>
+            <td rowspan="3">не відповідають</td>
+        </tr>
+        <tr>
+            <th>Сполучник</th>
+        </tr>
+        <tr>
+            <th>Частка</th>
+        </tr>
+        <tr>
+            <th colspan="5">Особлива частина мови</th>
+        </tr>
+        <tr>
+            <th>Вигук</th>
+            <td>виражає почуття, емоції</td>
+            <td>не змінюємо</td>
+            <td>не буває членом речення</td>
+            <td>не відповідає</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrmova-6cl">
+        <tr>
+            <th colspan="5">СТИЛІ МОВЛЕННЯ</th>
+        </tr>
+        <tr>
+            <td>Розмовний</td>
+            <td>Науковий</td>
+            <td>Художній</td>
+            <td>Публіцистичний</td>
+            <td>Офіційно-діловий</td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+        <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="vYg-D90RhUM">
+            <img src="https://img.youtube.com/vi/vYg-D90RhUM/maxresdefault.jpg" alt="Обложка видео">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadVideo(element) {
+                let videoId = element.getAttribute("data-video-id");
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTrekzQD-p23qOi0JrmfzTp89&index=25`;
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаємо блок
+                element.appendChild(iframe); // Вставляємо відео
+            }
+        </script>
+
+<div class="container">
+ <div class="a">
+    <div id="quiz">
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+    </div>
+    <div id="result"></div>
+ 
+ <script>
+    const quizData = [
+        {
+            question: "Прикметники змінюються за ...",
+            options: [
+                "групами, відмінками і числами",
+                "родами, відмінками, числами",
+                "відмінками і числами",
+                "групами і відмінками"
+            ],
+            answer: "родами, відмінками, числами"
+        },
+        {
+            question: "Укажіть ряд якісних прикметників",
+            options: [
+                "легкий, житловий, довгий",
+                "чистий, гучний, швидкий",
+                "місцевий, лісовий, квітковий",
+                "український, сестрин, вовчий"
+            ],
+            answer: "чистий, гучний, швидкий"
+        },
+        {
+            question: "Укажіть рядок, у якому всі прикметники мають форму найвищого ступеня порівняння",
+            options: [
+                "найпрозоріший кришталь, чистіший посуд",
+                "найгарячіше джерело, надзвичайно цікаві спостереження",
+                "найшвидший поїзд, найбільш глибока западина",
+                "неймовірно красиві краєвиди, найдорожчі друзі"
+            ],
+            answer: "найшвидший поїзд, найбільш глибока западина"
+        },
+        {
+            question: "Позначте рядок, усі слова в якому — числівники",
+            options: [
+                "десять, десятеро, десятка, десятий",
+                "три, третій, тридцять, триста",
+                "двоє, другий, двічі, дванадцять",
+                "п'ятдесятий, п'ятдесят, п'ятдесятиріччя, п'ятнадцятий"
+            ],
+            answer: "три, третій, тридцять, триста"
+        },
+        {
+            question: "Позначте речення, у якому вжито збірний числівник",
+            options: [
+                "Будувало дванадцять лицарів Софію.",
+                "Школярики стоять по три, чотири.",
+                "Я міг на тисячу, лишаю на п'ятак.",
+                "У погляді двійко іскрин виграє."
+            ],
+            answer: "У погляді двійко іскрин виграє."
+        }
+    ];
+   
+    let currentQuestion = 0;
+    let score = 0;
+
+    function loadQuestion() {
+        if (currentQuestion < quizData.length) {
+            document.getElementById("question").innerText = quizData[currentQuestion].question;
+            let optionsHtml = "";
+            quizData[currentQuestion].options.forEach(option => {
+                optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+            });
+            document.getElementById("options").innerHTML = optionsHtml;
+        } else {
+            document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+            document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+        }
+    }
+
+    function checkAnswer(button, answer) {
+        const buttons = document.querySelectorAll(".options button");
+        buttons.forEach(btn => btn.disabled = true);
+        
+        if (answer === quizData[currentQuestion].answer) {
+            button.classList.add("correct");
+            score++;
+        } else {
+            button.classList.add("wrong");
+            buttons.forEach(btn => {
+                if (btn.innerText === quizData[currentQuestion].answer) {
+                    btn.classList.add("correct");
+                }
+            });
+        }
+        setTimeout(() => {
+            currentQuestion++;
+            loadQuestion();
+        }, 1500);
+    }
+
+    loadQuestion();
+</script>
+</div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Хімія 7 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <h2 align="center">Хімія 7 клас</h2>
+
+    <p><button><a href="title7cl.html">Повернутися</a></button></p>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Будова атома</th>
+        </tr>
+        <tr>
+            <td>Атом складається з ядра (протони p<sup>+</sup>, нейтрони n<sup>0</sup>) та електронів e<sup>-</sup>, що обертаються навколо ядра.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Хімічний елемент</th>
+        </tr>
+        <tr>
+            <td>Хімічний елемент – це вид атомів з однаковою кількістю протонів у ядрі. Позначається символом (наприклад, H, O).</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Молекули і речовини</th>
+        </tr>
+        <tr>
+            <td>Молекула – найменша частинка речовини, що має її властивості. Наприклад: вода H<sub>2</sub>O, кисень O<sub>2</sub></td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Прості й складні речовини</th>
+        </tr>
+        <tr>
+            <td>Прості: утворені одним елементом. Складні: утворені різними елементами </td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Фізичні й хімічні явища</th>
+        </tr>
+        <tr>
+            <td>Фізичні явища – змінюється стан речовини (танення льоду). Хімічні – утворюються нові речовини (2H<sub>2</sub>+O<sub>2</sub>→2H<sub>2</sub>O)</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Хімічна формула</th>
+        </tr>
+        <tr>
+            <td>Відображає склад молекули. Наприклад, H<sub>2</sub>O-вода (2 атоми водню, 1 атом кисню).</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Валентність елементів</th>
+        </tr>
+        <tr>
+            <td>Здатність атомів приєднувати певну кількість інших атомів. Наприклад, H – одновалентний, O – двовалентний.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Оксиди</th>
+        </tr>
+        <tr>
+            <td>Сполуки елементів із киснем.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Кислоти</th>
+        </tr>
+        <tr>
+            <td>Речовини, що містять атоми водню, які можуть заміщуватися металами. Формула: HCl.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Основи</th>
+        </tr>
+        <tr>
+            <td>Складаються з атомів металів і гідроксидної групи (OH)</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-7cl">
+        <tr>
+            <th>Солі</th>
+        </tr>
+        <tr>
+            <td>Продукт взаємодії кислот і основ. Наприклад, NaCl</td>
+        </tr>
+    </table>   
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+    <div align="center">
+
+        <div class="video-wrapper" onclick="loadPlaylist(this)">
+            <img src="https://img.youtube.com/vi/XeIm07holHc/maxresdefault.jpg" alt="Обкладинка плейлиста">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadPlaylist(element) {
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = "https://www.youtube.com/embed/XeIm07holHc?list=PLsWyMT6uUTrer49sBvxCOWOoHZKkpKpLP&index=13&autoplay=1"; // Оновлене посилання
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаємо блок
+                element.appendChild(iframe); // Вставляємо відео
+            }
+        </script>
+
+    </div>
+
+    <h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Вступ до хімії
+            {
+                question: "Що вивчає хімія?",
+                options: ["Рослини та їх будову", "Властивості та перетворення речовин", "Космічні явища", "Будову Землі"],
+                answer: "Властивості та перетворення речовин"
+            },
+            {
+                question: "Яка з наведених речовин є простою?",
+                options: ["Вода (H₂O)", "Кисень (O₂)", "Сіль (NaCl)", "Вуглекислий газ (CO₂)"],
+                answer: "Кисень (O₂)"
+            },
+            {
+                question: "Який прилад використовують для нагрівання речовин у лабораторії?",
+                options: ["Пробірку", "Спиртівку", "Воронку", "Фільтрувальний папір"],
+                answer: "Спиртівку"
+            },
+            {
+                question: "Яка речовина є сумішшю?",
+                options: ["Дистильована вода", "Кухонна сіль", "Повітря", "Залізо"],
+                answer: "Повітря"
+            },
+
+            // Будова атома та періодична система
+            {
+                question: "Хто створив періодичну систему хімічних елементів?",
+                options: ["Ньютон", "Менделєєв", "Авогадро", "Лавуазьє"],
+                answer: "Менделєєв"
+            },
+            {
+                question: "Яку заряджену частинку містить ядро атома?",
+                options: ["Електрони", "Протони", "Нейтрони", "Іони"],
+                answer: "Протони"
+            },
+            {
+                question: "Який заряд має електрон?",
+                options: ["Додатний", "Від'ємний", "Нейтральний", "Залежить від атома"],
+                answer: "Від'ємний"
+            },
+            {
+                question: "Який хімічний елемент має символ 'Na'?",
+                options: ["Калій", "Натрій", "Магній", "Азот"],
+                answer: "Натрій"
+            },
+
+            // Хімічні реакції
+            {
+                question: "Що є ознакою хімічної реакції?",
+                options: ["Зміна кольору", "Виділення газу", "Утворення осаду", "Усі відповіді вірні"],
+                answer: "Усі відповіді вірні"
+            },
+            {
+                question: "Який процес є хімічною реакцією?",
+                options: ["Тане лід", "Випаровування води", "Горіння паперу", "Розчинення цукру у воді"],
+                answer: "Горіння паперу"
+            },
+            {
+                question: "Як називається речовина, що вступає в реакцію?",
+                options: ["Продукт", "Реагент", "Суміш", "Каталізатор"],
+                answer: "Реагент"
+            },
+            {
+                question: "Який газ виділяється під час горіння вугілля?",
+                options: ["Кисень", "Водень", "Вуглекислий газ", "Азот"],
+                answer: "Вуглекислий газ"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+</body>
+</html>

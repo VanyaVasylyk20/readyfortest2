@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Фізика 9 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+                        
+    <h2 align="center">Фізика 9 клас</h2>
+
+    <p><button><a href="title9cl.html">Повернутися</a></button></p>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Механічний рух</th>
+        </tr>
+        <tr>
+            <td>Види руху: прямолінійний, криволінійний. Основні характеристики: шлях, переміщення, швидкість.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Закони Ньютона</th>
+        </tr>
+        <tr>
+            <td>1-й закон: інерція; 2-й закон: F = ma; 3-й закон: дія = протидія.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Імпульс тіла та закони збереження</th>
+        </tr>
+        <tr>
+            <td>Імпульс p = mV. Закон збереження імпульсу в замкненій системі.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Тиск у рідинах та газах</th>
+        </tr>
+        <tr>
+            <td>Закон Паскаля: тиск у рідині передається в усі боки однаково. Закон Архімеда: сила витіснення.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Теплові явища</th>
+        </tr>
+        <tr>
+            <td>Види теплопередачі: теплопровідність, конвекція, випромінювання. Теплоємність і рівняння теплового балансу.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Електромагнітні явища</th>
+        </tr>
+        <tr>
+            <td>Магнітне поле, явище електромагнітної індукції (закон Фарадея). Формула E = - ∆f/∆t.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Світлові явища</th>
+        </tr>
+        <tr>
+            <td>Закони відбиття та заломлення світла. Дисперсія, інтерференція та дифракція світла.</td>
+        </tr>
+    </table>
+
+    <table class="table-physyk-9cl">
+        <tr>
+            <th>Будова атома та атомні явища</th>
+        </tr>
+        <tr>
+            <td>Модель атома (Резерфорда-Бора). Спектри атомів. Ядерні реакції. Радіоактивність.</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'XrzuXpwBid4', 'PLsWyMT6uUTrfJ4nDGqi5JYtCWY165Bicd', 12)">
+        <img src="https://img.youtube.com/vi/XrzuXpwBid4/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Тести з фізики 9 клас
+            {
+                question: "Що таке сила?",
+                options: ["Фізична величина, яка описує взаємодію тіл", "Величина, що визначає швидкість руху тіла", "Величина, що вимірюється у метрах", "Величина, що описує масу тіла"],
+                answer: "Фізична величина, яка описує взаємодію тіл"
+            },
+            {
+                question: "Яка одиниця вимірювання сили в Міжнародній системі одиниць?",
+                options: ["Кілограм", "Метр", "Ньютон", "Джоуль"],
+                answer: "Ньютон"
+            },
+            {
+                question: "Як змінюється кінетична енергія тіла, якщо його швидкість збільшується вдвічі?",
+                options: ["Залишається незмінною", "Подвоюється", "Збільшується в чотири рази", "Зменшується в чотири рази"],
+                answer: "Збільшується в чотири рази"
+            },
+            {
+                question: "Що є причиною заломлення світла?",
+                options: ["Відображення світла від поверхні", "Зміна швидкості світла при проходженні через різні середовища", "Проходження світла через темні області", "Поляризація світла"],
+                answer: "Зміна швидкості світла при проходженні через різні середовища"
+            },
+            {
+                question: "Яка лінза збирає промені світла в одній точці?",
+                options: ["Конвексна лінза", "Конкава лінза", "Плоска лінза", "Випукла лінза"],
+                answer: "Конвексна лінза"
+            },
+            {
+                question: "Яка одиниця вимірювання сили світла в Міжнародній системі одиниць?",
+                options: ["Люкс", "Кандела", "Ватт", "Люмен"],
+                answer: "Кандела"
+            },
+            {
+                question: "Що таке електричний струм?",
+                options: ["Рух електронів через провідник", "Рух позитивних частинок через провідник", "Рух атомів через провідник", "Рух молекул через провідник"],
+                answer: "Рух електронів через провідник"
+            },
+            {
+                question: "Як змінюється опір провідника, якщо температура підвищується?",
+                options: ["Опір зменшується", "Опір залишається незмінним", "Опір збільшується", "Опір спочатку зменшується, а потім збільшується"],
+                answer: "Опір збільшується"
+            },
+            {
+                question: "Яка одиниця вимірювання електричного струму?",
+                options: ["Ом", "Ампер", "Вольт", "Ватт"],
+                answer: "Ампер"
+            },
+            {
+                question: "Що таке теплота?",
+                options: ["Різниця температур між двома тілами", "Енергія, що передається від одного тіла до іншого", "Швидкість молекул у тілі", "Потік енергії в просторі"],
+                answer: "Енергія, що передається від одного тіла до іншого"
+            },
+            {
+                question: "Яка одиниця вимірювання кількості теплоти?",
+                options: ["Джоуль", "Кельвін", "Кілограм", "Ватт"],
+                answer: "Джоуль"
+            },
+            {
+                question: "Як змінюється об'єм газу, якщо його температура зростає, при сталому тиску?",
+                options: ["Об'єм зменшується", "Об'єм залишається сталим", "Об'єм збільшується", "Об'єм змінюється нелінійно"],
+                answer: "Об'єм збільшується"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+
+
+</body>
+</html>

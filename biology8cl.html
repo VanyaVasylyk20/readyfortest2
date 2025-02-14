@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Біологія 8 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+                     
+    <h2 align="center">Біологія 8 клас</h2>
+
+    <p><button><a href="title8cl.html">Повернутися</a></button></p>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Клітина як основна одиниця життя</th>
+        </tr>
+        <tr>
+            <td>Клітина — основна одиниця живих організмів. Всі клітини мають загальні компоненти: мембрану, цитоплазму, ядро. Клітини поділяються на прокаріотичні та еукаріотичні.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Будова клітини</th>
+        </tr>
+        <tr>
+            <td>Клітина складається з плазматичної мембрани, цитоплазми, ядра, мітохондрій, рибосом, лізосом. У рослин є клітинна стінка, хлоропласти.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Обмін речовин та енергії в клітині</th>
+        </tr>
+        <tr>
+            <td>У клітині відбуваються процеси метаболізму: анаболізм (синтез речовин) та катаболізм (розпад речовин). Головні джерела енергії — глюкоза та кисень.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Тканини рослин та тварин</th>
+        </tr>
+        <tr>
+            <td>Тканини рослин: покривні, основні, провідні, механічні, видільні. У тварин: епітеліальні, сполучні, м'язові, нервові. Тканини виконують різні функції в організмі.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Органи та їх системи</th>
+        </tr>
+        <tr>
+            <td>Органи виконують певні функції в організмі. Системи органів: травна, дихальна, кровоносна, нервова, видільна тощо. Кожна система забезпечує життєдіяльність організму.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Розмноження організмів</th>
+        </tr>
+        <tr>
+            <td>Організми можуть розмножуватись статевим та безстатевим способами. Безстатеве — поділ клітин, брунькування, спори. Статеве — утворення статевих клітин.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Основи генетики</th>
+        </tr>
+        <tr>
+            <td>Генетика вивчає спадковість та мінливість організмів. Ген — одиниця спадковості. Спадкові ознаки передаються від батьків до нащадків через гени.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Вплив середовища на організми</th>
+        </tr>
+        <tr>
+            <td>Організми адаптуються до змін середовища, наприклад, через фізіологічні зміни, поведінкові реакції або мутації.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Поняття екології</th>
+        </tr>
+        <tr>
+            <td>Екологія вивчає взаємодію організмів між собою та з навколишнім середовищем. Середовище включає абіотичні (неживі) та біотичні (живі) фактори.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-8cl">
+        <tr>
+            <th>Людина і навколишнє середовище</th>
+        </tr>
+        <tr>
+            <td>Людина впливає на природу через діяльність: сільське господарство, промисловість, забруднення. Важливе значення має охорона природи та сталий розвиток.</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'RdTXExCaE3Y', 'PLsWyMT6uUTreW2lCJgSwGD-b7qoZ4Q8a2', 10)">
+        <img src="https://img.youtube.com/vi/RdTXExCaE3Y/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Біологія 8 клас
+            {
+                question: "Яка з наступних частин клітини є найбільша?",
+                options: ["Мітохондрія", "Ядро", "Хлоропласт", "Цитоплазма"],
+                answer: "Цитоплазма"
+            },
+            {
+                question: "Що таке цитоплазма?",
+                options: ["Це тверде ядро клітини", "Субстанція, що заповнює клітину, в якій знаходяться органели", "Тільки рідина всередині клітини", "Це структура, яка дає клітині форму"],
+                answer: "Субстанція, що заповнює клітину, в якій знаходяться органели"
+            },
+            {
+                question: "Яка функція мітохондрій?",
+                options: ["Виробляють енергію для клітини", "Контролюють всі клітинні процеси", "Синтезують білки", "Зберігають спадкову інформацію"],
+                answer: "Виробляють енергію для клітини"
+            },
+            {
+                question: "Як називається процес, у результаті якого одна клітина утворює дві дочірні клітини?",
+                options: ["Міоз", "Мітоз", "Гаметогенез", "Фотосинтез"],
+                answer: "Мітоз"
+            },
+            {
+                question: "До яких організмів належать грибки, бактерії, водорості?",
+                options: ["Тварини", "Рослини", "Гриби", "Протисти"],
+                answer: "Протисти"
+            },
+            {
+                question: "Яка особливість рослинного клітини?",
+                options: ["Відсутність хлоропластів", "Мітохондрії", "Наявність клітинної стінки та хлоропластів", "Наявність тільки однієї органели"],
+                answer: "Наявність клітинної стінки та хлоропластів"
+            },
+            {
+                question: "Яка система організму відповідає за перетравлення їжі?",
+                options: ["Дихальна система", "Травна система", "Кровоносна система", "М'язова система"],
+                answer: "Травна система"
+            },
+            {
+                question: "Яка функція серця в організмі?",
+                options: ["Регулює температуру тіла", "Перекачує кров по організму", "Підтримує рівень глюкози в крові", "Виводить токсини з організму"],
+                answer: "Перекачує кров по організму"
+            },
+            {
+                question: "Як називається орган, який відповідає за фільтрацію крові?",
+                options: ["Печінка", "Нирки", "Легені", "Шлунок"],
+                answer: "Нирки"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+    
+</body>
+</html>

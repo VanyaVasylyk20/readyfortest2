@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Англійська мова 8 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+                 
+    <h2 align="center">Англійська мова 8 клас</h2>
+
+    <p><button><a href="title8cl.html">Повернутися</a></button></p>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Present Continuous Tense</th>
+        </tr>
+        <tr>
+            <td>Описує дії, які відбуваються зараз або в цей період часу. Форму утворюють: am/is/are + дієслово з -ing. Наприклад: She is reading a book.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Present Simple Tense</th>
+        </tr>
+        <tr>
+            <td>Використовується для опису регулярних дій, звичок, фактів. Форму утворюють: дієслово в основній формі (для 3-ї особи одн. додається -s).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Past Simple Tense</th>
+        </tr>
+        <tr>
+            <td>Використовується для дій, які відбулися в минулому. Форму утворюють: дієслово в другій формі (для неправильних дієслів — особливі форми).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Future Simple Tense</th>
+        </tr>
+        <tr>
+            <td>Описує дії, які стануться в майбутньому. Форму утворюють: will + дієслово в основній формі. Наприклад: I will go to the cinema tomorrow.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Comparative and Superlative Adjectives</th>
+        </tr>
+        <tr>
+            <td>Використовуються для порівняння. Для прикметників, що складаються з одного складу, додається -er (comparative) або -est (superlative).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Modals of Advice (Should, Ought to)</th>
+        </tr>
+        <tr>
+            <td>Використовуються для надання порад. Форму утворюють: should/ought to + дієслово в основній формі. Наприклад: You should study for the exam.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Present Perfect Tense</th>
+        </tr>
+        <tr>
+            <td>Описує дії, що сталися в минулому, але мають зв'язок з теперішнім. Форму утворюють: have/has + past participle. Наприклад: I have visited London.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Conditionals (Zero, First, Second)</th>
+        </tr>
+        <tr>
+            <td>Використовуються для вираження умов. Zero conditional: If + present simple, present simple. First: If + present simple, will + infinitive.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>The Passive Voice</th>
+        </tr>
+        <tr>
+            <td>Відзначає, коли дія важливіша за того, хто її виконує. Форму утворюють: to be + дієслово в past participle. Наприклад: The book is read by me.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Reported Speech</th>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="table-english-8cl">
+        <tr>
+            <th>Використовується для передачі слів інших осіб. Замість прямих мов — непряма мова. Наприклад: She said that she was going to the party.</th>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'a1WOgsvwVR4', 'PLsWyMT6uUTrc5TjDKaNzQPQyImDsDM8Zl', 44)">
+        <img src="https://img.youtube.com/vi/a1WOgsvwVR4/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Англійська мова 8 клас
+            {
+                question: "She __________ (go) to school every day.",
+                options: ["is going", "goes", "go", "went"],
+                answer: "goes"
+            },
+            {
+                question: "I __________ (do) my homework now.",
+                options: ["am doing", "do", "does", "did"],
+                answer: "am doing"
+            },
+            {
+                question: "They __________ (play) football every weekend.",
+                options: ["are playing", "play", "played", "plays"],
+                answer: "play"
+            },
+            {
+                question: "He __________ (not eat) breakfast at the moment.",
+                options: ["doesn’t eat", "isn’t eating", "don’t eat", "eat"],
+                answer: "isn’t eating"
+            },
+            {
+                question: "We __________ (study) for the test tomorrow.",
+                options: ["study", "are studying", "studied", "will study"],
+                answer: "are studying"
+            },
+            {
+                question: "__________ apple a day keeps __________ doctor away.",
+                options: ["An, the", "A, the", "A, a", "The, a"],
+                answer: "An, the"
+            },
+            {
+                question: "She is __________ best student in __________ class.",
+                options: ["a, a", "the, the", "the, a", "a, the"],
+                answer: "the, the"
+            },
+            {
+                question: "I live in __________ big house near __________ park.",
+                options: ["a, a", "a, the", "the, the", "the, a"],
+                answer: "a, the"
+            },
+            {
+                question: "I will meet you __________ 3 o'clock.",
+                options: ["at", "in", "on", "by"],
+                answer: "at"
+            },
+            {
+                question: "The keys are __________ the table.",
+                options: ["under", "on", "in", "at"],
+                answer: "on"
+            },
+            {
+                question: "We usually go to the park __________ the afternoon.",
+                options: ["in", "at", "on", "by"],
+                answer: "in"
+            },
+            {
+                question: "She is sitting __________ the chair near the window.",
+                options: ["on", "at", "in", "under"],
+                answer: "on"
+            },
+            {
+                question: "My birthday is __________ November.",
+                options: ["on", "in", "at", "by"],
+                answer: "in"
+            },
+            {
+                question: "She is wearing a blue __________.",
+                options: ["skirt", "jacket", "trousers", "hat"],
+                answer: "skirt"
+            },
+            {
+                question: "He bought a new __________.",
+                options: ["shirt", "shoes", "belt", "coat"],
+                answer: "shirt"
+            },
+            {
+                question: "I need a warm __________ because it’s cold outside.",
+                options: ["coat", "jeans", "cap", "socks"],
+                answer: "coat"
+            },
+            {
+                question: "She put on a red __________ for the party.",
+                options: ["dress", "shorts", "sweater", "hat"],
+                answer: "dress"
+            },
+            {
+                question: "If it __________ (rain), we will stay at home.",
+                options: ["rains", "will rain", "rain", "rained"],
+                answer: "rains"
+            },
+            {
+                question: "If you __________ (study) hard, you will pass the exam.",
+                options: ["study", "will study", "studied", "studies"],
+                answer: "study"
+            },
+            {
+                question: "If she __________ (invite) me, I will come to the party.",
+                options: ["invites", "will invite", "invite", "invited"],
+                answer: "invites"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+    
+</body>
+</html>

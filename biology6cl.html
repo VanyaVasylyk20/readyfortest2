@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Біологія 6 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Біологія 6 клас</h2>
+
+    <p><button><a href="title6cl.html">Повернутися</a></button></p>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Вступ до біології</th>
+    </tr>
+    <tr>
+        <td>Біологія – наука про живу природу. Вивчає рослини, тварин, мікроорганізми та їхні процеси життєдіяльності.</td>
+    </tr>
+</table>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Ознаки живих організмів</th>
+    </tr>
+    <tr>
+        <td>Властивості живого: клітинна будова, обмін речовин, ріст, розвиток, розмноження, подразливість, рух.</td>
+    </tr>
+</table>
+ 
+<table class="table-biology-6cl">
+    <tr>
+        <th>Клітина – основа живого</th>
+    </tr>
+    <tr>
+        <td>Клітина – структурна й функціональна одиниця організму. Основні компоненти: ядро, цитоплазма, мембрана.</td>
+    </tr>
+</table>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Різноманітність організмів</th>
+    </tr>
+    <tr>
+        <td>Царства живої природи: рослини, тварини, гриби, бактерії. Особливості будови та роль у природі.</td>
+    </tr>
+</table>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Рослини</th>
+    </tr>
+    <tr>
+        <td>Будова рослин: корінь, стебло, листок, квітка. Процеси: фотосинтез, дихання, транспірація.</td>
+    </tr>
+</table>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Гриби</th>
+    </tr>
+    <tr>
+        <td>Гриби – окреме царство живих організмів. Особливості будови грибів, значення в природі та для людини.</td>
+    </tr>
+</table>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Бактерії</th>
+    </tr>
+    <tr>
+        <td>Бактерії – одноклітинні організми. Роль у природі: розкладання, взаємодія з іншими організмами, хвороби.</td>
+    </tr>
+</table>
+
+<table class="table-biology-6cl">
+    <tr>
+        <th>Екологія та взаємозв’язки</th>
+    </tr>
+    <tr>
+        <td>Взаємодія живих організмів між собою та з середовищем. Ланцюги живлення, кругообіг речовин у природі.</td>
+    </tr>
+</table>
+ 
+<table class="table-biology-6cl">
+    <tr>
+        <th>Охорона природи</th>
+    </tr>
+    <tr>
+        <td>Проблеми забруднення довкілля, охорона рослин і тварин. Червона книга та збереження біорізноманіття.</td>
+    </tr>
+</table>
+
+<div align="center">
+    <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+    <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="wOs4gNVCwf8">
+        <img src="https://img.youtube.com/vi/wOs4gNVCwf8/maxresdefault.jpg" alt="Обложка видео">
+        <div class="play-button">▶</div>
+    </div>
+    
+    <script>
+        function loadVideo(element) {
+            let videoId = element.getAttribute("data-video-id");
+            let iframe = document.createElement("iframe");
+            iframe.width = "560";
+            iframe.height = "315";
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTregvNfAicgZFzA30x25AD3R&index=6`;
+            iframe.frameBorder = "0";
+            iframe.allow = "autoplay; encrypted-media";
+            iframe.allowFullscreen = true;
+    
+            element.innerHTML = ""; // Очищаємо блок
+            element.appendChild(iframe); // Вставляємо відео
+        }
+    </script>
+</div>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            {
+                question: "До складу квітки не входить",
+                options: ["квітконіжка", "оцвітина", "суцвіття", "чашолисток"],
+                answer: "суцвіття"
+            },
+            {
+                question: "До складних суцвіть належать",
+                options: ["волоть і колос", "початок і головка", "сережка і кошик", "початок і китиця"],
+                answer: "сережка і кошик"
+            },
+            {
+                question: "Штучне запилення відбувається за участі",
+                options: ["вітру", "людини", "комах", "птахів"],
+                answer: "людини"
+            },
+            {
+                question: "Ендосперм - це",
+                options: ["корінь зародка", "зародкове стебло", "видозмінений листок зародка", "тканина із запасом поживних речовин"],
+                answer: "тканина із запасом поживних речовин"
+            },
+            {
+                question: "Умова, яка не впливає на проростання насіння",
+                options: ["волога", "температура", "тиск", "світло"],
+                answer: "тиск"
+            },
+            {
+                question: "Прикладом сухих плодів є",
+                options: ["кістянка", "коробочка", "колос", "ягода"],
+                answer: "коробочка"
+            },
+            {
+                question: "До соковитих плодів належить",
+                options: ["зернівка", "біб", "горіх", "гарбузина"],
+                answer: "гарбузина"
+            },
+            {
+                question: "Яку одиницю не використовують для класифікації рослин",
+                options: ["царство", "вид", "родина", "тип"],
+                answer: "тип"
+            },
+            {
+                question: "Водорості, що мають панцир",
+                options: ["зелені", "бурі", "синьо-зелені", "діатомові"],
+                answer: "діатомові"
+            },
+            {
+                question: "Як називаються органи, за допомогою яких мохи прикріплюються до грунту і вбирають воду",
+                options: ["головний корінь", "додаткові корені", "бічні корені", "ризоїди"],
+                answer: "ризоїди"
+            },
+            {
+                question: "Щитник чоловічий - це",
+                options: ["плаун", "мох", "хвощ", "папоротник"],
+                answer: "папоротник"
+            },
+            {
+                question: "У голонасінних рослин замість квітки",
+                options: ["пиляк", "шишка", "хвоя", "спорангій"],
+                answer: "шишка"
+            },
+            {
+                question: "Дводольні відрізняються від однодольних",
+                options: ["наявністю камбію", "складними листками", "розгалудженим стеблом", "квіткою"],
+                answer: "наявністю камбію"
+            },
+            {
+                question: "Яка з перерахованих груп не належить до сільськогосподарських рослин",
+                options: ["зернові культури", "овочеві культури", "соковмісні культури", "плодово-ягідні культури"],
+                answer: "соковмісні культури"
+            },
+            {
+                question: "До сукулентів не належить",
+                options: ["соняшник", "опунція", "молочай", "очиток"],
+                answer: "соняшник"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+   
+</body>
+</html>

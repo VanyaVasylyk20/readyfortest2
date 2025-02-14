@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Хімія 9 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+                           
+    <h2 align="center">Хімія 9 клас</h2>
+
+    <p><button><a href="title9cl.html">Повернутися</a></button></p>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Основні класи неорганічних сполук</th>
+        </tr>
+        <tr>
+            <td>Включають оксиди, основи, кислоти, солі. Оксиди - це сполуки елементів із киснем. Основи - сполуки металів із гідроксидною групою (OH). Кислоти мають H+. Солі - продукти взаємодії кислот із основами чи металами.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Будова атома</th>
+        </tr>
+        <tr>
+            <td>Атом складається з ядра (протони, нейтрони) та електронної оболонки. Електрони рухаються по енергетичних рівнях. Кількість протонів дорівнює порядковому номеру елемента.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Періодична система елементів</th>
+        </tr>
+        <tr>
+            <td>Елементи в періодичній системі упорядковані за зростанням атомного номера. Вертикальні стовпці - групи (схожі властивості), горизонтальні рядки - періоди.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Хімічний зв’язок</th>
+        </tr>
+        <tr>
+            <td>Основні типи: іонний (між металами й неметалами), ковалентний (поділ електронів між атомами), металічний (вільний рух електронів у металі).</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Окисно-відновні реакції</th>
+        </tr>
+        <tr>
+            <td>Процес передачі електронів: окиснення - втрата електронів, відновлення - їх отримання. Важливо знайти окисник і відновник.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Розчини та їх концентрація</th>
+        </tr>
+        <tr>
+            <td>Розчини складаються з розчинника (вода) та розчиненої речовини. Концентрація визначається у відсотках, молярності, моляльності.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Органічні сполуки</th>
+        </tr>
+        <tr>
+            <td>Вуглець утворює органічні сполуки: алкани (насичені), алкени (ненасичені), алкіни. Багато органічних речовин утворюють полімери (пластик, гуму).</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-9cl">
+        <tr>
+            <th>Біологічно важливі сполуки</th>
+        </tr>
+        <tr>
+            <td>Включають білки, жири, вуглеводи, вітаміни. Білки - полімери амінокислот. Жири - складні ефіри гліцерину і жирних кислот.</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'c05zhzzNPaY', 'PLsWyMT6uUTrdCrlry5MDboQCTAwPCWWDu', 21)">
+        <img src="https://img.youtube.com/vi/c05zhzzNPaY/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Тести з хімії 9 клас
+            {
+                question: "Що таке атом?",
+                options: ["Найменша частинка речовини", "Частинка, що складається тільки з протонів", "Частинка, що складається з молекул", "Частинка, що складається з електронів і нейтронів"],
+                answer: "Найменша частинка речовини"
+            },
+            {
+                question: "Що таке молекула?",
+                options: ["Найменша частинка елемента", "Частинка, що складається з атомів одного або різних елементів", "Частинка, що складається лише з атомів одного елементу", "Найменша частинка сполуки"],
+                answer: "Частинка, що складається з атомів одного або різних елементів"
+            },
+            {
+                question: "Який елемент є основним складником води?",
+                options: ["Кисень", "Вуглець", "Азот", "Гідроген"],
+                answer: "Гідроген"
+            },
+            {
+                question: "Що таке хімічна реакція?",
+                options: ["Процес, у якому відбувається зміна агрегатного стану речовин", "Процес, у якому одні речовини перетворюються в інші", "Процес, при якому відбувається розподіл атомів", "Процес, при якому молекули не змінюються"],
+                answer: "Процес, у якому одні речовини перетворюються в інші"
+            },
+            {
+                question: "Яка з наступних реакцій є реакцією сполучення?",
+                options: ["2Na + Cl₂ → 2NaCl", "NaOH + HCl → NaCl + H₂O", "CaCO₃ → CaO + CO₂", "H₂O → H₂ + O₂"],
+                answer: "2Na + Cl₂ → 2NaCl"
+            },
+            {
+                question: "Яка з цих речовин є кислотним оксидом?",
+                options: ["CO₂", "CaO", "Na₂O", "H₂O"],
+                answer: "CO₂"
+            },
+            {
+                question: "Що є основним складником органічних сполук?",
+                options: ["Кисень", "Вуглець", "Азот", "Гідроген"],
+                answer: "Вуглець"
+            },
+            {
+                question: "Яка з наступних сполук є вуглеводнем?",
+                options: ["CH₄ (метан)", "H₂O (вода)", "NaCl (сіль)", "CO₂ (вуглекислий газ)"],
+                answer: "CH₄ (метан)"
+            },
+            {
+                question: "Яка формула етану?",
+                options: ["C₆H₁₂", "C₂H₆", "CH₄", "C₃H₈"],
+                answer: "C₂H₆"
+            },
+            {
+                question: "Що таке розчин?",
+                options: ["Суміш, що складається з однієї речовини", "Суміш, в якій одна речовина розчиняється в іншій", "Речовина, що не розчиняється у воді", "Речовина, що утворюється під час хімічних реакцій"],
+                answer: "Суміш, в якій одна речовина розчиняється в іншій"
+            },
+            {
+                question: "Яка одиниця вимірювання концентрації розчину?",
+                options: ["Грам", "Моль", "Процент", "Літр"],
+                answer: "Процент"
+            },
+            {
+                question: "Як називається розчин, в якому розчинена максимальна кількість речовини при певних умовах?",
+                options: ["Насичений розчин", "Розбавлений розчин", "Ненасичений розчин", "Концентрованіший розчин"],
+                answer: "Насичений розчин"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+
+
+    
+</body>
+</html>

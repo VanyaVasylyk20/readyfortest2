@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Біологія 9 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+                                   
+    <h2 align="center">Біологія 9 клас</h2>
+
+    <p><button><a href="title9cl.html">Повернутися</a></button></p>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Клітина: будова та функції</th>
+        </tr>
+        <tr>
+            <td>Клітина — структурна і функціональна одиниця організму. Основні компоненти: мембрана, цитоплазма, ядро, органели. Мембрана контролює транспорт речовин. Ядро містить ДНК.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Біосинтез білків</th>
+        </tr>
+        <tr>
+            <td>Відбувається у рибосомах. Етапи: транскрипція (запис інформації з ДНК у РНК) і трансляція (синтез білка за матрицею РНК).</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Метаболізм: обмін речовин</th>
+        </tr>
+        <tr>
+            <td>Сукупність хімічних реакцій. Катаболізм — розпад органічних речовин для отримання енергії. Анаболізм — синтез речовин для клітинних потреб.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Генетика: закони Менделя</th>
+        </tr>
+        <tr>
+            <td>Основи спадковості: домінантні та рецесивні ознаки. Закони Менделя пояснюють успадкування однієї та кількох ознак.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Енергетичний обмін</th>
+        </tr>
+        <tr>
+            <td>Етапи: гліколіз (у цитоплазмі), цикл Кребса (у мітохондріях), електронно-транспортний ланцюг. Утворюється АТФ.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Розмноження організмів</th>
+        </tr>
+        <tr>
+            <td>Форми: нестатеве (поділ клітини, брунькування, спори) і статеве (злиття гамет). Запліднення — основа статевого розмноження.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Еволюція: теорія Дарвіна</th>
+        </tr>
+        <tr>
+            <td>Еволюція — поступова зміна видів. Основні фактори: природний добір, спадковість, мінливість, боротьба за існування.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Екологія: взаємодія організмів</th>
+        </tr>
+        <tr>
+            <td>Види взаємодій: симбіоз, хижацтво, паразитизм, конкуренція. Екосистема — єдність біоценозу та середовища.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Імунітет: захист організму</th>
+        </tr>
+        <tr>
+            <td>Імунна система бореться з інфекціями. Види імунітету: природний, штучний, клітинний, гуморальний.</td>
+        </tr>
+    </table>
+
+    <table class="table-biology-9cl">
+        <tr>
+            <th>Біотехнологія</th>
+        </tr>
+        <tr>
+            <td>Використання організмів у промисловості, сільському господарстві, медицині (генна інженерія, ферментація).</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'jDUo_13CeEE', 'PLsWyMT6uUTre8GitZVOuMnRdmLcKPGIU-', 8)">
+        <img src="https://img.youtube.com/vi/jDUo_13CeEE/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Тести з біології 9 клас
+            {
+                question: "Що таке клітина?",
+                options: ["Основна одиниця живих організмів", "Частина організму, що відповідає за ріст", "Частина організму, що не бере участь в обміні речовин", "Частина організму, яка не має ядра"],
+                answer: "Основна одиниця живих організмів"
+            },
+            {
+                question: "Що входить до складу клітини?",
+                options: ["Тільки ядро", "Цитоплазма, ядро, мембрана", "Цитоплазма та мітохондрії", "Мембрана та ядро"],
+                answer: "Цитоплазма, ядро, мембрана"
+            },
+            {
+                question: "Як називається процес утворення нових клітин?",
+                options: ["Мітоз", "Мейоз", "Генетичне змішування", "Диференціація"],
+                answer: "Мітоз"
+            },
+            {
+                question: "Яке з наступних тверджень є правильним?",
+                options: ["ДНК знаходиться тільки в ядрі клітини", "ДНК є лише в клітинах тварин", "ДНК міститься в ядрі та в органелах клітини", "ДНК є тільки в рослинних клітинах"],
+                answer: "ДНК міститься в ядрі та в органелах клітини"
+            },
+            {
+                question: "Що таке фотосинтез?",
+                options: ["Процес перетворення хімічної енергії в теплову", "Процес утворення кисню", "Процес перетворення світлової енергії в хімічну", "Процес дихання рослин"],
+                answer: "Процес перетворення світлової енергії в хімічну"
+            },
+            {
+                question: "Який органел клітини відповідає за виробництво енергії?",
+                options: ["Мітохондрії", "Ядро", "Цитоплазма", "Рибосоми"],
+                answer: "Мітохондрії"
+            },
+            {
+                question: "Як називається процес, за допомогою якого рослини отримують енергію?",
+                options: ["Фотосинтез", "Хемосинтез", "Дихання", "Фотодихання"],
+                answer: "Фотосинтез"
+            },
+            {
+                question: "Що таке хлорофіл?",
+                options: ["Речовина, що відповідає за кольорове забарвлення рослин", "Речовина, що поглинає світло для фотосинтезу", "Органелла клітини", "Молекула води, що утворюється під час фотосинтезу"],
+                answer: "Речовина, що поглинає світло для фотосинтезу"
+            },
+            {
+                question: "Що є результатом фотосинтезу?",
+                options: ["Вода та кисень", "Глюкоза та кисень", "Глюкоза та вуглекислий газ", "Окис вуглецю та вода"],
+                answer: "Глюкоза та кисень"
+            },
+            {
+                question: "Як називається процес обміну газами у рослин?",
+                options: ["Транспірація", "Дихання", "Фотосинтез", "Осмос"],
+                answer: "Дихання"
+            },
+            {
+                question: "Які органи у людини відповідають за обмін газами?",
+                options: ["Легені", "Серце", "Шлунок", "Печінка"],
+                answer: "Легені"
+            },
+            {
+                question: "Що таке еволюція?",
+                options: ["Процес адаптації організмів до середовища", "Зміна організмів протягом часу під впливом природного добору", "Перетворення організмів на нові види", "Процес старіння організмів"],
+                answer: "Зміна організмів протягом часу під впливом природного добору"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+
+    
+</body>
+</html>

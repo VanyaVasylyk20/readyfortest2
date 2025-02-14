@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Англійська мова 9 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+                               
+    <h2 align="center">Англійська мова 9 клас</h2>
+
+    <p><button><a href="title9cl.html">Повернутися</a></button></p>
+
+    
+    <table class="table-english-9cl">
+        <tr>
+            <th>Present Simple vs Present Continuous</th>
+        </tr>
+        <tr>
+            <td>Present Simple: використовується для регулярних дій, фактів та звичок.
+                Формула: Subject + Verb(s).
+                Present Continuous: використовується для дій, які відбуваються зараз.
+                Формула: Subject + am/is/are + Verb(-ing).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Past Simple vs Past Continuous</th>
+        </tr>
+        <tr>
+            <td>Past Simple: для завершених дій у минулому.
+                Формула: Subject + Verb(-ed) або 2-га форма неправильного дієслова.
+                Past Continuous: для дій, що тривали в певний момент у минулому.
+                Формула: Subject + was/were + Verb(-ing).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Future Tenses</th>
+        </tr>
+        <tr>
+            <td>Future Simple: використовується для прогнозів, спонтанних рішень.
+                Формула: Subject + will + Verb.
+                Going to: для запланованих дій або намірів.
+                Формула: Subject + am/is/are going to + Verb.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Conditional Sentences</th>
+        </tr>
+        <tr>
+            <td>Zero Conditional: для фактів та істин.
+                Формула: If + Present Simple, Present Simple.
+                First Conditional: для реальних ситуацій.
+                Формула: If + Present Simple, will + Verb.
+                Second Conditional: для уявних ситуацій.
+                Формула: If + Past Simple, would + Verb.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Passive Voice</th>
+        </tr>
+        <tr>
+            <td>Використовується, коли дія важливіша за виконавця.
+                Формула: Subject + be + Past Participle (V3).
+                Час змінюється за допомогою форми "be".</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Reported Speech</th>
+        </tr>
+        <tr>
+            <td>Передача чиїхось слів. Зміна часу відбувається відповідно до правил: Present → Past, Past → Past Perfect.
+                Заміна займенників та обставин часу/місця.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Modal Verbs</th>
+        </tr>
+        <tr>
+            <td>Використовуються для вираження можливості, дозволу, обов’язку тощо.
+                Основні модальні дієслова: can, could, may, might, must, have to, should, would.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Articles (a, an, the)</th>
+        </tr>
+        <tr>
+            <td>A/An: для невизначених предметів (a перед приголосними, an перед голосними звуками).
+                The: для конкретних предметів або тих, які вже згадані.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Word Formation</th>
+        </tr>
+        <tr>
+            <td>Використання префіксів (un-, im-, dis-) та суфіксів (-ful, -less, -ly) для створення нових слів. Наприклад, happy → happiness.</td>
+        </tr>
+    </table>
+
+    <table class="table-english-9cl">
+        <tr>
+            <th>Writing Emails and Letters</th>
+        </tr>
+        <tr>
+            <td>Основні частини листа: привітання (Dear ...), вступ, основний текст, завершення (Best regards). Формальність залежить від адресата.</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'ctY7QLoBLVI', 'PLsWyMT6uUTrfOzuCWt6x-lIa3jNpLzkYz', 34)">
+        <img src="https://img.youtube.com/vi/ctY7QLoBLVI/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Тести з англійської мови 9 клас
+            {
+                question: "She ______ to the store every Saturday.",
+                options: ["go", "goes", "going", "gone"],
+                answer: "goes"
+            },
+            {
+                question: "They ______ TV when we arrived.",
+                options: ["watch", "were watching", "watched", "are watching"],
+                answer: "were watching"
+            },
+            {
+                question: "We need to ______ the information for the report.",
+                options: ["gather", "gain", "bring", "take"],
+                answer: "gather"
+            },
+            {
+                question: "I ______ in New York last year.",
+                options: ["lived", "live", "was living", "have lived"],
+                answer: "lived"
+            },
+            {
+                question: "Choose the correct sentence.",
+                options: ["I have never been to Paris before.", "I never have been to Paris before.", "I not have been to Paris before.", "I am never been to Paris before."],
+                answer: "I have never been to Paris before."
+            },
+            {
+                question: "She is very ______ at painting.",
+                options: ["good", "well", "best", "better"],
+                answer: "good"
+            },
+            {
+                question: "I will meet you ______ the bus stop.",
+                options: ["in", "on", "at", "by"],
+                answer: "at"
+            },
+            {
+                question: "What is the opposite of 'happy'?",
+                options: ["sad", "glad", "excited", "bored"],
+                answer: "sad"
+            },
+            {
+                question: "We ______ not come to the party last night.",
+                options: ["did", "has", "does", "is"],
+                answer: "did"
+            },
+            {
+                question: "I don't understand ______ you mean.",
+                options: ["what", "how", "when", "why"],
+                answer: "what"
+            },
+            {
+                question: "Choose the correct form of the word: 'This is a very ______ (interest) book.'",
+                options: ["interesting", "interest", "interested", "interests"],
+                answer: "interesting"
+            },
+            {
+                question: "Choose the correct form of the word: 'I’m not very ______ (comfort) with the new changes.'",
+                options: ["comfortable", "comfort", "discomfort", "comfortably"],
+                answer: "comfortable"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+
+ 
+</body>
+</html>

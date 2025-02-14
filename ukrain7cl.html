@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Українська мова 7 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Українська мова 7 клас</h2>
+
+    <p><button><a href="title7cl.html">Повернутися</a></button></p>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Лексика і фразеологія</th>
+        </tr>
+        <tr>
+            <td>Лексика – сукупність слів мови. Слова бувають однозначні й багатозначні. Фразеологізми – сталі вирази.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Будова слова і словотвір</th>
+        </tr>
+        <tr>
+            <td>Слово складається з кореня, префікса, суфікса і закінчення. Словотвір – процес утворення нових слів.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Морфологія. Іменник</th>
+        </tr>
+        <tr>
+            <td>Іменник – частина мови, що означає предмет. Буває власний/загальний, однина/множина, відмінки.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Морфологія. Прикметник</th>
+        </tr>
+        <tr>
+            <td>Прикметник – частина мови, що означає ознаку предмета. Буває якісний, відносний, присвійний.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Морфологія. Дієслово</th>
+        </tr>
+        <tr>
+            <td>Дієслово – частина мови, що означає дію або стан. Змінюється за часами, родами, числами.</td>
+        </tr>
+    </table>
+ 
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Синтаксис. Просте речення</th>
+        </tr>
+        <tr>
+            <td>Просте речення має одну граматичну основу (підмет і присудок). Буває поширеним і непоширеним.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Синтаксис. Складне речення</th>
+        </tr>
+        <tr>
+            <td>Складне речення має дві і більше граматичні основи. Буває сполучникове і безсполучникове.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Складносурядне речення</th>
+        </tr>
+        <tr>
+            <td>Частини складносурядного речення рівноправні. З'єднуються сполучниками сурядності: і, а, але, чи.</td>
+        </tr>
+    </table>
+  
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Складнопідрядне речення</th>
+        </tr>
+        <tr>
+            <td>У складнопідрядному реченні одна частина є головною, інша – залежною. Залежна частина відповідає на запитання.-->
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Розділові знаки у реченні</th>
+        </tr>
+        <tr>
+            <td>Коми, тире, двокрапка ставляться відповідно до правил синтаксису. Наприклад, при однорідних членах речення.--></td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Фонетика і орфографія</th>
+        </tr>
+        <tr>
+            <td>Фонетика вивчає звуки мовлення. Орфографія – правила написання слів. Особлива увага – чергування голосних і приголосних.</td>
+        </tr>
+    </table>
+
+    <table class="table-ukrain-7cl">
+        <tr>
+            <th>Стилі мовлення</th>
+        </tr>
+        <tr>
+            <td>Основні стилі: науковий, художній, діловий, розмовний, публіцистичний. Кожен має свої особливості.</td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+            
+            <!-- Second Video -->
+            <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="2VFikpWPPD4">
+                <img src="https://img.youtube.com/vi/2VFikpWPPD4/maxresdefault.jpg" alt="Обложка видео">
+                <div class="play-button">▶</div>
+            </div>
+            
+            <script>
+                function loadVideo(element) {
+                    let videoId = element.getAttribute("data-video-id");
+                    let iframe = document.createElement("iframe");
+                    iframe.width = "560";
+                    iframe.height = "315";
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTregvNfAicgZFzA30x25AD3R&index=6`;
+                    iframe.frameBorder = "0";
+                    iframe.allow = "autoplay; encrypted-media";
+                    iframe.allowFullscreen = true;
+            
+                    element.innerHTML = ""; // Очищаємо блок
+                    element.appendChild(iframe); // Вставляємо відео
+                }
+            </script>
+        </div>
+
+        <h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+        <div class="container">
+            <div class="a">
+                <div id="quiz">
+                    <div class="question" id="question"></div>
+                    <div class="options" id="options"></div>
+                </div>
+                <div id="result"></div>
+            </div>
+        
+            <script>
+                const quizData = [
+                    {
+                        question: "Яка частина мови не є самостійною і не є службовою?",
+                        options: ["Частка", "Прийменник", "Вигук", "Сполучник", "Прислівник"],
+                        answer: "Прислівник"
+                    },
+                    {
+                        question: "Яку роль виконує сполучник?",
+                        options: ["Сполучає однорідні частини мови та частини складного речення", "Сполучає іменник з іншими словами", "Сполучає слова у словосполучення"],
+                        answer: "Сполучає однорідні частини мови та частини складного речення"
+                    },
+                    {
+                        question: "Прислівник є в кожному рядку, ОКРІМ:",
+                        options: ["І ось поблизу зашелестіли кущі", "Обабіч шляху зеленіє озимина", "Десь бриніла притишена пісня"],
+                        answer: "Десь бриніла притишена пісня"
+                    },
+                    {
+                        question: "Дієприкметник є в кожному реченні, ОКРІМ:",
+                        options: ["Йде весна запашна, квітами-перлами закосичена", "Десь, колись в якійсь краіні проживав поет нещасний", "Серпанками прикрита, слуха солов'я срібна ніч"],
+                        answer: "Десь, колись в якійсь краіні проживав поет нещасний"
+                    },
+                    {
+                        question: "Скільки форм має дієслово?",
+                        options: ["6", "5", "3"],
+                        answer: "6"
+                    },
+                    {
+                        question: "З'ясуйте, якими частинами мови є виділені в реченні слова: Мені (1)неначе сниться: хтось хитає мене в колисці, (2) а місяць сміється (3)наді мною (4) тихесенько.",
+                        options: ["1Г, 2В, 3Б, 4А", "1Б, 2А, 3Г, 4В", "1А, 2Б, 3В, 4Г"],
+                        answer: "1А, 2Б, 3В, 4Г"
+                    },
+                    {
+                        question: "Що таке дієприслівниковий зворот?",
+                        options: ["Це дієприслівник із залежними від нього словами", "Це група слів, відокремлена комами", "Це слово із суфіксом -ачи- та залежними словами", "Це слово із суфіксом -ячи- та залежними словами"],
+                        answer: "Це дієприслівник із залежними від нього словами"
+                    },
+                    {
+                        question: "На які групи поділяються частини мови?",
+                        options: ["На самостійні, службові та вигук", "Власне українські та запозичені", "На архаїзми, історизми", "На конкретні та абстрактні"],
+                        answer: "На самостійні, службові та вигук"
+                    },
+                    {
+                        question: "Усі сполучники підрядні часові в рядку:",
+                        options: ["як, поки, щоб, для того щоб", "аби, доки, поки, коли", "перед тим як, після того як, коли, доки"],
+                        answer: "аби, доки, поки, коли"
+                    },
+                    {
+                        question: "Через дефіс треба писати всі прислівники в рядку:",
+                        options: ["по/середині, по/київськи, по/третє", "кінець/кінцем, уряди/годи, будь/де", "по/латині, по/дитячому, по/свійськи"],
+                        answer: "по/латині, по/дитячому, по/свійськи"
+                    },
+                    {
+                        question: "Дієприслівниками є всі слова в рядку:",
+                        options: ["залишивши, залишаючи, залишені", "читаючи, прочитавши, дочитуючи", "вишиваючи, вишитий, вишивши"],
+                        answer: "читаючи, прочитавши, дочитуючи"
+                    },
+                    {
+                        question: "Дієприкметниковий зворот є у реченні:",
+                        options: ["Я зачарований красою карпатських краєвидів", "На полонині пахло охолодженою за ніч землею", "Вечірнє повітря напоєне запахом скошених трав"],
+                        answer: "Вечірнє повітря напоєне запахом скошених трав"
+                    },
+                    {
+                        question: "Інфінітив є в реченні:",
+                        options: ["Дивлюсь я на небо та й думку гадаю", "На сонці ясени горять, спадають ягоди з шовковиць", "Казати правду треба вчасно і невчасно"],
+                        answer: "Казати правду треба вчасно і невчасно"
+                    }
+                ];
+        
+                let currentQuestion = 0;
+                let score = 0;
+        
+                function loadQuestion() {
+                    if (currentQuestion < quizData.length) {
+                        document.getElementById("question").innerText = quizData[currentQuestion].question;
+                        let optionsHtml = "";
+                        quizData[currentQuestion].options.forEach(option => {
+                            optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                        });
+                        document.getElementById("options").innerHTML = optionsHtml;
+                    } else {
+                        document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                        document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+                    }
+                }
+        
+                function checkAnswer(button, answer) {
+                    const buttons = document.querySelectorAll(".options button");
+                    buttons.forEach(btn => btn.disabled = true);
+                    
+                    if (answer === quizData[currentQuestion].answer) {
+                        button.classList.add("correct");
+                        score++;
+                    } else {
+                        button.classList.add("wrong");
+                        buttons.forEach(btn => {
+                            if (btn.innerText === quizData[currentQuestion].answer) {
+                                btn.classList.add("correct");
+                            }
+                        });
+                    }
+                    setTimeout(() => {
+                        currentQuestion++;
+                        loadQuestion();
+                    }, 1500);
+                }
+        
+                loadQuestion();
+            </script>
+        </div>
+        
+        
+ 
+</body>
+</html>

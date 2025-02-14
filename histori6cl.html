@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історія України. Всесвітня Історія</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Історія України . Всесвітня Історія 6 клас</h2>
+
+    <p><button><a href="title6cl.html">Повернутисяі</a></button></p>
+
+    <table class="table-histori-6cl">
+        <tr>
+            <th colspan="3">Перші цивілізації світу</th>
+        </tr>
+        <tr>
+            <th>Цивілізація</th>
+            <th>Місце розташування</th>
+            <th>Основні досягнення</th>
+        </tr>
+        <tr>
+            <td>Месопотамія</td>
+            <td>Межеріччя Тигру і Євфрату</td>
+            <td>Винахід письма, розвиток міських джерав</td>
+        </tr>
+        <tr>
+            <td>Єгипет</td>
+            <td>Долина Нілу</td>
+            <td>Піраміди, ієрогліфи, централізована держава</td>
+        </tr>
+        <tr>
+            <td>Індія</td>
+            <td>Долина Інду</td>
+            <td>Планувааня міст, санітарні системи</td>
+        </tr>
+        <tr>
+            <td>Китай</td>
+            <td>Долина Хуанхе</td>
+            <td>Велика Китайська стіна, шовк, порцеляна</td>
+        </tr>
+    </table>
+
+    <table class="table-histori-6cl">
+        <tr>
+            <th colspan="3">Античний світ</th>
+        </tr>
+        <tr>
+            <th>Цивілізація</th>
+            <th>Місце розташування</th>
+            <th>Основні досягнення</th>
+        </tr>
+        <tr>
+            <td>Стародавня Греція</td>
+            <td>Балканський півострів</td>
+            <td>Демократія, філософія, Олімпійські ігри</td>
+        </tr>
+        <tr>
+            <td>Стародавній Рим</td>
+            <td>Італійський півострів</td>
+            <td>Римське право, архітектура, розширення імперії</td>
+        </tr>
+    </table>
+
+    <table class="table-histori-6cl">
+        <tr>
+            <th colspan="3">Середньовіччя</th>
+        </tr>
+        <tr>
+            <th>Період</th>
+            <th>Основні події</th>
+            <th>Вплив на розвиток</th>
+        </tr>
+        <tr>
+            <td>Раннє середньовіччя</td>
+            <td>Формування феодальних держав, християнізація Європи</td>
+            <td>Зміцнення феодальної системи, поширення християнства</td>
+        </tr>
+        <tr>
+            <td>Високе середньовіччя</td>
+            <td>Хрестові походи, розвиток міст</td>
+            <td>Торгівля, культурний обмін, конфлікти</td>
+        </tr>
+        <tr>
+            <td>Пізнє середньовіччя</td>
+            <td>Чорна смерть, Столітня війна</td>
+            <td>Демографічнізміни, політичні конфлікти</td>
+        </tr>
+    </table>
+
+    <table class="table-histori-6cl">
+        <tr>
+            <th colspan="3">Історія України</th>
+        </tr>
+        <tr>
+            <th>Період</th>
+            <th>Основні події</th>
+            <th>Вплив на розвиток</th>
+        </tr>
+        <tr>
+            <td>Київська Русь</td>
+            <td>Виникнення держави, прийняття християнства</td>
+            <td>Формування української культури, релігії</td>
+        </tr>
+        <tr>
+            <td>Галицько-Волинське князівство</td>
+            <td>Розвиток державності, боротьба з монголами</td>
+            <td>Зміцнення західноукраїнських земель</td>
+        </tr>
+        <tr>
+            <td>Монгольська навала</td>
+            <td>Завоюваняя Київської Русі монголами</td>
+            <td>Руйнування міст, зміни в політичній структурі</td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+        <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="u2OSu9jRHNQ">
+            <img src="https://img.youtube.com/vi/u2OSu9jRHNQ/maxresdefault.jpg" alt="Обложка видео">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadVideo(element) {
+                let videoId = element.getAttribute("data-video-id");
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTrcG-63VHqA2B-_GArV2Hd4V&index=15`;
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаємо блок
+                element.appendChild(iframe); // Вставляємо відео
+            }
+        </script>
+    </div>
+
+    <div class="container">
+        <div class="a">
+            <div id="quiz">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+            </div>
+            <div id="result"></div>
+        </div>
+     
+        <script>
+            const quizData = [
+                {
+                    question: "Яка археологічна культура вважається найдавнішою на території України?",
+                    options: ["Трипільська", "Київська Русь", "Кам’яний вік", "Скіфська"],
+                    answer: "Кам’яний вік"
+                },
+                {
+                    question: "Столицею Київської Русі був(-ла):",
+                    options: ["Львів", "Київ", "Чернігів", "Новгород"],
+                    answer: "Київ"
+                },
+                {
+                    question: "Який князь охрестив Русь у 988 році?",
+                    options: ["Олег", "Ярослав Мудрий", "Володимир Великий", "Святослав"],
+                    answer: "Володимир Великий"
+                },
+                {
+                    question: "Яку назву мало найдавніше письмо, яке використовували східні слов’яни?",
+                    options: ["Глаголиця", "Кирилиця", "Латиниця", "Руни"],
+                    answer: "Глаголиця"
+                },
+                {
+                    question: "Як називалися кочові народи, що жили на території України в давнину?",
+                    options: ["Скіфи", "Гуни", "Монголи", "Половці"],
+                    answer: "Скіфи"
+                },
+                {
+                    question: "Яка річка була колискою стародавнього Єгипту?",
+                    options: ["Тигр", "Євфрат", "Ніл", "Інд"],
+                    answer: "Ніл"
+                },
+                {
+                    question: "Яку систему письма використовували у Стародавньому Єгипті?",
+                    options: ["Глаголицю", "Ієрогліфи", "Алфавіт", "Кирилицю"],
+                    answer: "Ієрогліфи"
+                },
+                {
+                    question: "Хто був засновником Римської імперії?",
+                    options: ["Юлій Цезар", "Октавіан Август", "Нерон", "Александр Македонський"],
+                    answer: "Октавіан Август"
+                },
+                {
+                    question: "Як називається форма правління, за якої влада належить народу?",
+                    options: ["Монархія", "Деспотизм", "Демократія", "Олігархія"],
+                    answer: "Демократія"
+                },
+                {
+                    question: "У якому році почався занепад Західної Римської імперії?",
+                    options: ["476 рік", "1000 рік", "632 рік", "1453 рік"],
+                    answer: "476 рік"
+                }
+            ];
+           
+            let currentQuestion = 0;
+            let score = 0;
+        
+            function loadQuestion() {
+                if (currentQuestion < quizData.length) {
+                    document.getElementById("question").innerText = quizData[currentQuestion].question;
+                    let optionsHtml = "";
+                    quizData[currentQuestion].options.forEach(option => {
+                        optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                    });
+                    document.getElementById("options").innerHTML = optionsHtml;
+                } else {
+                    document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                    document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+                }
+            }
+        
+            function checkAnswer(button, answer) {
+                const buttons = document.querySelectorAll(".options button");
+                buttons.forEach(btn => btn.disabled = true);
+                
+                if (answer === quizData[currentQuestion].answer) {
+                    button.classList.add("correct");
+                    score++;
+                } else {
+                    button.classList.add("wrong");
+                    buttons.forEach(btn => {
+                        if (btn.innerText === quizData[currentQuestion].answer) {
+                            btn.classList.add("correct");
+                        }
+                    });
+                }
+                setTimeout(() => {
+                    currentQuestion++;
+                    loadQuestion();
+                }, 1500);
+            }
+        
+            loadQuestion();
+        </script>
+    </div>
+</body>
+</html>

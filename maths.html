@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика 5 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</style>
+</head>
+<body>
+    <h2 align="center">Математика 5 клас</h2>
+    <p><button><a href="title5cl.html">Повернутися</a></button></p>
+    <table>
+        <tr>
+            <th>Натуральні числа</th>
+        </tr>
+        <tr>
+            <td>Числа 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 і т. д., які використовують при лічбі предметів, називають натуральними</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Властивість довжини відрізка</th>
+        </tr>
+        <tr>
+            <td>Якщо на відрізку AB позначити точку C, то довжина відрізка ABдорівнює сумі довжин відрізків AC і CB.</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Рівні відрізки</th>
+        </tr>
+        <tr>
+            <td>Два відрізки називають рівними, якщо вони суміщаються при накладанні.</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Властивість прямої</th>
+        </tr>
+        <tr>
+            <td>Через дві точки проходить тільки одна пряма.</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Порівняння натуральних чисел</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <p><li>
+                        Число 0 менше від будь-якого натурального числа.
+                    </li></p>
+                    <p><li>
+                        Із двох натуральних чисел, які мають різну кількість цифр, більшим є те, у якого кількість цифр більша.
+                    </li></p>
+                    <p><li>
+                        Із двох натуральних чисел з однаковою кількістю цифр більшим є те, у якого більша перша (при читанні зліва направо) з неоднакових цифр.
+                    </li></p>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Ділення з остачею</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <p>
+                        <li>a = bq + r, де a — ділене, b — дільник, q — неповна частка, r — остача, r < b.</li>
+                    </p>
+                    <p>
+                        <li>Якщо остача дорівнює нулю, то говорять, що число a ділиться націло на число b.</li>
+                    </p>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Площа прямокутника</th>
+        </tr>
+        <tr>
+            <td>S=a*b, де a і b сторони прямокутника</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Площа квадрата</th>
+        </tr>
+        <tr>
+            <td>S = a <sup>2</sup>, де S — площа квадрата, a — довжина його сторони.</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Об’єм прямокутного паралелепіпеда</th>
+        </tr>
+        <tr>
+            <td>V = abc, де V — об’єм паралелепіпеда, a, b і c — його виміри, виражені в одних і тих самих одиницях; V = Sh, де S — площа основи паралелепіпеда, h — його висота.</td>
+        </tr>
+    </table>
+    <table class="table-maths-5cl">
+        <tr>
+            <th>Об’єм куба</th>
+        </tr>
+        <tr>
+            <td>V = a <sup>3</sup>, де V — об’єм куба, a — довжина його ребра.</td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+        <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="dAvekAlIwUk">
+            <img src="https://img.youtube.com/vi/dAvekAlIwUk/maxresdefault.jpg" alt="Обложка видео">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadVideo(element) {
+                let videoId = element.getAttribute("data-video-id");
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTrfTf9JDVCrHFmNGPHRtFTUe&index=21`;
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаем блок
+                element.appendChild(iframe); // Вставляем видео
+            }
+        </script>
+        </div>
+    </div>
+
+    <h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+<div class="a">
+    <div class="container">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        const quizData = [
+            {
+                question: "Яка з числових нерівностей є правильною?",
+                options: [
+                    "4/5 > 1",
+                    "1 < 8/7",
+                    "4/11 > 5/11",
+                    "2⅘ > 3⅕"
+                ],
+                answer: "1 < 8/7"
+            },
+            {
+                question: "Обчислити 7/17 + 3/17 =",
+                options: [
+                    "10/34",
+                    "21/17",
+                    "10/17",
+                    "4/17"
+                ],
+                answer: "10/17"
+            },
+            {
+                question: "3/4 числа 24 дорівнюють ...",
+                options: [
+                    "32",
+                    "48",
+                    "16",
+                    "18"
+                ],
+                answer: "18"
+            },
+            {
+                question: "7¾ десятковим дробом записуються...",
+                options: [
+                    "7,75",
+                    "7,3",
+                    "7,4",
+                    "3,4"
+                ],
+                answer: "7,75"
+            },
+            {
+                question: "13 м 8 см =...",
+                options: [
+                    "13,8 м",
+                    "13,08 м",
+                    "13,008 м",
+                    "1,38 м"
+                ],
+                answer: "13,08 м"
+            },
+            {
+                question: "2,4 + 1,38 = ...",
+                options: [
+                    "3,42",
+                    "3,78",
+                    "3,62",
+                    "3,438"
+                ],
+                answer: "3,78"
+            },
+            {
+                question: "13 - 0,2 = ...",
+                options: [
+                    "12,08",
+                    "13,2",
+                    "12,8",
+                    "13,8"
+                ],
+                answer: "12,8"
+            },
+            {
+                question: "Якщо сума двох доданків дорівнює 10,24, а один з доданків дорівнює 5,4, то другий доданок дорівнює ...",
+                options: [
+                    "5,84",
+                    "5,2",
+                    "6,44",
+                    "4,84"
+                ],
+                answer: "4,84"
+            },
+            {
+                question: "Власна швидкість човна 8,7 км/год, а швидкість течії річки 2,2 км/год. Знайти швидкість човна проти течії.",
+                options: [
+                    "6,5 км/год",
+                    "10,9 км/год",
+                    "3,25 км/год",
+                    "5,45 км/год"
+                ],
+                answer: "6,5 км/год"
+            },
+            {
+                question: "Щоб знайти число, 20% якого дорівнюють 80, треба ...",
+                options: [
+                    "80 : 0,2",
+                    "80 * 0,2",
+                    "80 + 20%",
+                    "80 - 20%"
+                ],
+                answer: "80 : 0,2"
+            },
+            {
+                question: "Середнє арифметичне чисел 1,6 і 0,8 дорівнює ...",
+                options: [
+                    "0,6",
+                    "2,4",
+                    "1,4",
+                    "1,2"
+                ],
+                answer: "1,2"
+            },
+            {
+                question: "Щоб знайти 40% від 120, треба ...",
+                options: [
+                    "120 * 0,4",
+                    "120 : 0,4",
+                    "120 * 40",
+                    "120 : 40"
+                ],
+                answer: "120 * 0,4"
+            }
+        ];
+       
+        let currentQuestion = 0;
+        let score = 0;
+    
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+    
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+    
+        loadQuestion();
+    </script>
+</div>
+
+</body>
+</html>

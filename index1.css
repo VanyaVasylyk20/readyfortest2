@@ -1,0 +1,286 @@
+body {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(225deg, #7070d3 3%, #0000cd 19.3%, #0000cd 20.7%, #00008b 32.81%, #00008b 60.09%, #00008b 62.09%, #0000cd 75.71%,        #0000cd 82.17%, #7979d4 94.83%), rgba(9, 30, 136, 0.25);
+    color: white;
+}
+table {
+    border: 1px solid white;
+    border-collapse: collapse; 
+    width: 50%;
+    margin: auto;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+.table_info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-ukrmova-5cl {
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+.table-ukrmova-5cl-vidirech {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.table-ukrmova-5cl-leksikologiij {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pp {
+    text-align: left;
+}
+.table-ukrmova-5cl-stylmovlennya {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.table-ukrmova-5cl-typsrosdumu {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: #F0F8FF;
+    padding: 15px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 17 px;
+    font-family: serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.historyua-4cl {
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+#circular-menu {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 2000px;
+  }
+  
+  .menu-item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+.table-history-5cl {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.table-history-5cl-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.table-maths-5cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-english-5cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-nature-5cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-informatics-5cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-ukrmova-6cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-histori-6cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-matchs-6cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-english-6cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-inform-6cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-biology-6cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-ukrain-7cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-histori-7cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-matchs-7cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-physyk-7cl{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-himik-7cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-english-7cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-biology-7cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-histori-8cl{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-ukrein-8cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-maths-8cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-physyk-8cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-himik-8cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-english-8cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-biology-8cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-ukrein-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-histori-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-maths-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-physyk-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-himik-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-english-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-biology-9cl {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.video-wrapper {
+    position: relative;
+    width: 560px;
+    height: 415px;
+    cursor: pointer;
+}
+.container1 {
+    display: flex;
+}
+.video-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: #3498db;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.options button.correct {
+    background: #2ecc71 !important;
+}
+.options button.wrong {
+    background: #e74c3c !important;
+}
+.options button:hover {
+    background: #2980b9;
+}
+.result {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.a {
+    color: #000;
+}

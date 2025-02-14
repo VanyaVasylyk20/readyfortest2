@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Англійська мова 6 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Англійська мова 6 клас</h2>
+
+    <p><button><a href="title6cl.html">Повернутисяі</a></button></p>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th colspan="2">Adverb and determiner</th>
+        </tr>
+        <tr>
+            <td>Ступені порівняння</td>
+            <td>Кількісні визначники</td>
+        </tr>
+        <tr>
+            <td>Прислівники можуть змінювати ступінь порівняння, наприклад, 
+                “slowly” (повільно), “more slowly” (повільніше), “most slowly” (найповільніше).
+            </td>
+            <td> Визначники, які вказують на кількість, наприклад, “a lot” (багато), “a little” (трохи), “very” (дуже), 
+                “too” (занадто), “rather” (досить).
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Conjunction</th>
+        </tr>
+        <tr>
+            <td>Результати та наслідки</td>
+        </tr>
+        <tr>
+            <td>Сполучники, які вказують на результат або наслідок, наприклад, “so” (отже), “then” (тоді).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Determiner</th>
+        </tr>
+        <tr>
+            <td>Визначений артикль</td>
+        </tr>
+        <tr>
+            <td>Артикль “the” використовується для позначення унікальних об’єктів, громадських будівель, географічних назв, наприклад, 
+                “the sun” (сонце), “the Eiffel Tower” (Ейфелева вежа).
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Modality</th>
+        </tr>
+        <tr>
+            <td>Модальні дієслова</td>
+        </tr>
+        <tr>
+            <td>Дієслова, які виражають можливість, необхідність або дозвіл, наприклад, “may” (може), “must” (повинен), “can” (може), 
+                “could” (міг би), “have to” (повинен), “had to” (мусив), “would” (б хотів).
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Noun</th>
+        </tr>
+        <tr>
+            <td>Власні та загальні іменники</td>
+        </tr>
+        <tr>
+            <td>Власні іменники позначають конкретні назви, наприклад, “John” (Джон), “London” (Лондон). 
+                Загальні іменники позначають загальні об’єкти, наприклад, “apple” (яблуко), “car” (автомобіль).
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Preposition</th>
+        </tr>
+        <tr>
+            <td>Часові прийменники</td>
+        </tr>
+        <tr>
+            <td>Прийменники, які вказують на час, наприклад, “till” (до), “until” (до).</td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Pronoun</th>
+        </tr>
+        <tr>
+            <td>Присвійні займенники</td>
+        </tr>
+        <tr>
+            <td>Займенники, які вказують на приналежність, наприклад, “mine” (мій), “yours” (твій), “his” (його), “hers” (її), 
+                “ours” (наш), “theirs” (їхній).
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-english-6cl">
+        <tr>
+            <th>Verb</th>
+        </tr>
+        <tr>
+            <td>Питальні теги</td>
+        </tr>
+        <tr>
+            <td>Короткі запитання, які додаються до кінця речення для підтвердження, наприклад, “isn’t it?” (чи не так?), 
+                “aren’t they?” (чи не так?).
+            </td>
+        </tr>
+    </table>
+
+    <div align="center">
+        <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+        <div class="video-wrapper" onclick="loadVideo(this)" data-video-id="Z2_lDdz9j1c">
+            <img src="https://img.youtube.com/vi/Z2_lDdz9j1c/maxresdefault.jpg" alt="Обложка видео">
+            <div class="play-button">▶</div>
+        </div>
+        
+        <script>
+            function loadVideo(element) {
+                let videoId = element.getAttribute("data-video-id");
+                let iframe = document.createElement("iframe");
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&list=PLsWyMT6uUTreEaUJ5hh3rdc6N8Tf7UPnM&index=9`;
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+        
+                element.innerHTML = ""; // Очищаємо блок
+                element.appendChild(iframe); // Вставляємо відео
+            }
+        </script>
+    </div>
+    <h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+    <div class="container">
+        <div class="a">
+            <div id="quiz">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+            </div>
+            <div id="result"></div>
+        </div>
+    
+        <script>
+            const quizData = [
+                {
+                    question: "We can buy milk, butter and cheese at …",
+                    options: ["the butcher’s", "the dairy", "the bakery"],
+                    answer: "the dairy"
+                },
+                {
+                    question: "They can buy a kilo of potatoes at …",
+                    options: ["the chemist’s", "the bakery", "the greengrocer’s"],
+                    answer: "the greengrocer’s"
+                },
+                {
+                    question: "What would you like? – I …………..a kilo of apples, please.",
+                    options: ["want", "like", "would like"],
+                    answer: "would like"
+                },
+                {
+                    question: "You can buy a bar of chocolate at the…",
+                    options: ["toys for boys", "confectionary", "grocer’s"],
+                    answer: "confectionary"
+                },
+                {
+                    question: "You can buy seafood at the…",
+                    options: ["fishmonger’s", "dairy", "newsagent’s"],
+                    answer: "fishmonger’s"
+                },
+                {
+                    question: "I __________ the shopping yesterday.",
+                    options: ["do", "does", "did"],
+                    answer: "did"
+                },
+                {
+                    question: "My mother ______ to the dairy two days ago.",
+                    options: ["goes", "go", "went"],
+                    answer: "went"
+                },
+                {
+                    question: "My elder brother __________ a cake last week.",
+                    options: ["buy", "buys", "bought"],
+                    answer: "bought"
+                },
+                {
+                    question: "We _______ a new toaster month ago.",
+                    options: ["buys", "bought", "bought"],
+                    answer: "bought"
+                },
+                {
+                    question: "My sister and I ______ _______to the supermarket yesterday.",
+                    options: ["go", "went", "gone"],
+                    answer: "went"
+                },
+                {
+                    question: "A shop that sells milk and cottage cheese",
+                    options: ["bakers", "confectionery", "diary"],
+                    answer: "diary"
+                },
+                {
+                    question: "A shop that sells fish and seafood",
+                    options: ["fishmongers", "butchers", "stationery"],
+                    answer: "fishmongers"
+                }
+            ];
+    
+            let currentQuestion = 0;
+            let score = 0;
+    
+            function loadQuestion() {
+                if (currentQuestion < quizData.length) {
+                    document.getElementById("question").innerText = quizData[currentQuestion].question;
+                    let optionsHtml = "";
+                    quizData[currentQuestion].options.forEach(option => {
+                        optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                    });
+                    document.getElementById("options").innerHTML = optionsHtml;
+                } else {
+                    document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                    document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+                }
+            }
+    
+            function checkAnswer(button, answer) {
+                const buttons = document.querySelectorAll(".options button");
+                buttons.forEach(btn => btn.disabled = true);
+                
+                if (answer === quizData[currentQuestion].answer) {
+                    button.classList.add("correct");
+                    score++;
+                } else {
+                    button.classList.add("wrong");
+                    buttons.forEach(btn => {
+                        if (btn.innerText === quizData[currentQuestion].answer) {
+                            btn.classList.add("correct");
+                        }
+                    });
+                }
+                setTimeout(() => {
+                    currentQuestion++;
+                    loadQuestion();
+                }, 1500);
+            }
+    
+            loadQuestion();
+        </script>
+    </div>
+    
+
+</body>
+</html>

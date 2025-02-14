@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історія України 5 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <h2 align="center">Вступ до історії 5 клас</h2>
+    <p><button><a href="title5cl.html">Повернутися</a></button></p>
+<div class="historyua-4cl">
+    <table border="1">
+        <tr>
+            <th colspan="2">Родине дерево</th>
+        </tr>
+        <tr>
+            <th>Пункт</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <th>Дослідження сімейного фотоальбому</th>
+            <td>Вивчення фотографій, історій та родинних зв'язків.</td>
+        </tr>
+        <tr>
+            <th>Родинні зв'зки</th>
+            <td>Визначення родинних відносин та їх значення.</td>
+        </tr>
+        <tr>
+            <th>Історія сім'ї</th>
+            <td>Дослідження походження та історії родинию</td>
+        </tr>
+    </table>
+    <table class="table-history-5cl">
+        <tr>
+            <th colspan="2">Люди в історій</th>
+        </tr>
+        <tr>
+            <th>Пункт</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <th>Відомі герої</th>
+            <td>Вивчення відомих історичних постатей та їхніх вчинків.</td>
+        </tr>
+        <tr>
+            <th>Безіменні герої</th>
+            <td>Розгляд ролі та внеску менш відомих осіб в історію.</td>
+        </tr>
+        <tr>
+            <th>Вплтв на історію</th>
+            <td>Аналіз впливу різних людей на історичні події.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Ікони як історичні пам'ятки</th>
+        </tr>
+        <tr>
+            <th>Пункт</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <th>Культурні артефакти</th>
+            <td>Вивчення ікон як частини культурної спадщини.</td>
+        </tr>
+        <tr>
+            <th>Історичне значення</th>
+            <td>Аналіз значення ікон в історичному контексті.</td>
+        </tr>
+        <tr>
+            <th>Богоподібні лики</th>
+            <td>Дослідження зображення святих та їх символіки.</td>
+        </tr>
+    </table>
+    <table class="table-history-5cl-2">
+        <tr>
+            <th colspan="2">Фортеці, замки та палаци України</th>
+        </tr>
+        <tr>
+            <th>Пункт</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <th>Історичні будівлі</th>
+            <td>Вивчення архітектурита історії фортець, замків та палаців.</td>
+        </tr>
+        <tr>
+            <th>Архітектурні особливості</th>
+            <td>Аналіз архітектурних стилів та елементів.</td>
+        </tr>
+        <tr>
+            <th>Значення</th>
+            <td>Розгляд ролі цих будівель в історії України.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Парки і сади України</th>
+        </tr>
+        <tr>
+            <th>Пункт</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <th>Історичні пам'ятки</th>
+            <td>Вивчення парків та садів як частини культурної спадщини.</td>
+        </tr>
+        <tr>
+            <th>Культурне значення</th>
+            <td>Аналіз ролі парків та садів у культурі України.</td>
+        </tr>
+        <tr>
+            <th>Роль у культурі</th>
+            <td>Дослідження впливу паркав та садів на суспільство.</td>
+        </tr>
+    </table>
+</div>
+
+<div align="center"> 
+    <h3>Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+    <div class="video-wrapper" onclick="loadPlaylist(this)">
+        <img src="https://img.youtube.com/vi/glZnZYytgG8/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+    
+    <script>
+        function loadPlaylist(element) {
+            let iframe = document.createElement("iframe");
+            iframe.width = "560";
+            iframe.height = "315";
+            iframe.src = "https://www.youtube.com/embed/videoseries?list=PLsWyMT6uUTrduUqenfLfNE1Q04DreHijV&autoplay=1";
+            iframe.frameBorder = "0";
+            iframe.allow = "autoplay; encrypted-media";
+            iframe.allowFullscreen = true;
+    
+            element.innerHTML = ""; // Очищаємо блок
+            element.appendChild(iframe); // Вставляємо відео
+        }
+    </script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+<div class="a">
+<div class="container">
+    <div id="quiz">
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+    </div>
+    <div id="result"></div>
+</div>
+<script>
+    const quizData = [
+        {
+            question: "Наука, що вивчає минуле людства за речовими джерелами, знайденими шляхом розкопок",
+            options: [
+                "історія",
+                "археологія",
+                "етнографія",
+                "топоніміка"
+            ],
+            answer: "археологія"
+        },
+        {
+            question: "Відомо, що довгі роки первісні люди використовували камінь для знарядь праці. Який метал людство стало обробляти першим?",
+            options: [
+                "залізо",
+                "мідь",
+                "срібло",
+                "бронзу"
+            ],
+            answer: "мідь"
+        },
+        {
+            question: "Умовно зменшене загальне зображення земної поверхні або її частини",
+            options: [
+                "атлас",
+                "масштаб",
+                "карта",
+                "глобус"
+            ],
+            answer: "карта"
+        },
+        {
+            question: "Які із перелічених джерел відносяться до історичних джерел?",
+            options: [
+                "усні джерела",
+                "речові джерела",
+                "писемні джерела",
+                "етнографічні",
+                "кіно- та фотодокументи",
+                "всі зазначені у списку"
+            ],
+            answer: "всі зазначені у списку"
+        },
+        {
+            question: "Полянський князь, засновник міста Києва",
+            options: [
+                "Кий",
+                "Аскольд",
+                "Олег",
+                "Володимир"
+            ],
+            answer: "Кий"
+        },
+        {
+            question: "Який київський князь охрестив Русь?",
+            options: [
+                "Володимир Великий",
+                "Ярослав Мудрий",
+                "Данило Галицький",
+                "Володимир Мономах"
+            ],
+            answer: "Володимир Великий"
+        },
+        {
+            question: "Літописець, автор 'Повісті минулих літ'",
+            options: [
+                "Ярослав Мудрий",
+                "Нестор",
+                "Володимир Великий",
+                "Геродот"
+            ],
+            answer: "Нестор"
+        },
+        {
+            question: "Якому князю, засновнику Софійського собору, споруджено пам'ятник у місті Києві?",
+            options: [
+                "Володимиру Великому",
+                "Володимиру Мономаху",
+                "Ярославу Мудрому",
+                "Ярославу Осмомислу"
+            ],
+            answer: "Ярославу Мудрому"
+        },
+        {
+            question: "Український гетьман, що очолив Національно-визвольну війну українського народу у 1648-1657 роках",
+            options: [
+                "Богдан Хмельницький",
+                "Перто Сагайдачний",
+                "Дмитро Вишневецький",
+                "Петро Дорошенко"
+            ],
+            answer: "Богдан Хмельницький"
+        },
+        {
+            question: "Козацький човен",
+            options: [
+                "ластівка",
+                "чайка",
+                "сокіл",
+                "галера"
+            ],
+            answer: "чайка"
+        },
+        {
+            question: "Перші лікарні на Русі з'являються",
+            options: [
+                "при братських школах",
+                "при монастирях",
+                "лише в містах"
+            ],
+            answer: "при монастирях"
+        },
+        {
+            question: "Визначте хто займався лікуванням хворих в давні часи",
+            options: [
+                "знахарі",
+                "лікарі",
+                "монахи"
+            ],
+            answer: "знахарі"
+        },
+        {
+            question: "Якого вченого вважають найвидатнішим вченим історичної науки України?",
+            options: [
+                "М. Грушевський",
+                "Д. Яворницький",
+                "Т. Шевченко"
+            ],
+            answer: "М. Грушевський"
+        },
+        {
+            question: "22 січня 1919 року в м.Києві відбулося урочисте об'єднання (акт злуки) ЗУНР та УНР. Під якою назвою цей день увійшов в історію України?",
+            options: [
+                "День Соборності",
+                "День Незалежності",
+                "День Об'єднання"
+            ],
+            answer: "День Соборності"
+        },
+        {
+            question: "Як називався період історії України, коли від голоду масово помирали люди?",
+            options: [
+                "Війна",
+                "Скрутні часи",
+                "Голодомор"
+            ],
+            answer: "Голодомор"
+        },
+        {
+            question: "Перший на наших землях друкований підручник 'Буквар', що вийшов у 1574 р., виданий у ...",
+            options: [
+                "Києві",
+                "Львові",
+                "Запоріжжі",
+                "Одесі"
+            ],
+            answer: "Львові"
+        }
+    ];
+   
+    let currentQuestion = 0;
+    let score = 0;
+
+    function loadQuestion() {
+        if (currentQuestion < quizData.length) {
+            document.getElementById("question").innerText = quizData[currentQuestion].question;
+            let optionsHtml = "";
+            quizData[currentQuestion].options.forEach(option => {
+                optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+            });
+            document.getElementById("options").innerHTML = optionsHtml;
+        } else {
+            document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+            document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+        }
+    }
+
+    function checkAnswer(button, answer) {
+        const buttons = document.querySelectorAll(".options button");
+        buttons.forEach(btn => btn.disabled = true);
+        
+        if (answer === quizData[currentQuestion].answer) {
+            button.classList.add("correct");
+            score++;
+        } else {
+            button.classList.add("wrong");
+            buttons.forEach(btn => {
+                if (btn.innerText === quizData[currentQuestion].answer) {
+                    btn.classList.add("correct");
+                }
+            });
+        }
+        setTimeout(() => {
+            currentQuestion++;
+            loadQuestion();
+        }, 1500);
+    }
+
+    loadQuestion();
+</script>
+</div>
+</div>
+</body>
+</html>

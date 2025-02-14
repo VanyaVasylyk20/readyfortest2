@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Хімія 8 клас</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+             
+    <h2 align="center">Хімія 8 клас</h2>
+
+    <p><button><a href="title8cl.html">Повернутися</a></button></p>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Атоми та молекули</th>
+        </tr>
+        <tr>
+            <td>Атом — найменша частинка елемента, молекула — частинка, що складається з кількох атомів.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Склад атома</th>
+        </tr>
+        <tr>
+            <td>Атом складається з позитивно зарядженого ядра (протони, нейтрони) та електронів, які обертаються навколо ядра.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Хімічні елементи</th>
+        </tr>
+        <tr>
+            <td>Елементи — це чисті речовини, що складаються з атомів одного виду, позначаються символами.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Хімічні сполуки</th>
+        </tr>
+        <tr>
+            <td>Сполуки — це речовини, що складаються з атомів різних елементів, з’єднаних хімічними зв’язками.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Хімічні реакції</th>
+        </tr>
+        <tr>
+            <td>Хімічна реакція — це процес, при якому одні речовини перетворюються на інші. Реакції супроводжуються зміною енергії.</td>
+        </tr>
+    </table>
+
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Закони хімії</th>
+        </tr>
+        <tr>
+            <td>Основні закони: закон збереження маси, закон постійства складу, закон пропорційних змін.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Кислоти, основи, солі</th>
+        </tr>
+        <tr>
+            <td>Кислоти — це сполуки, що містять водень; основи — сполуки, що містять гідроксид-іони; солі — продукти реакцій кислот з основами.</td>
+        </tr>
+    </table>
+
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Розчини та їх властивості</th>
+        </tr>
+        <tr>
+            <td>Розчин — це однорідна суміш речовин, в якій одна з них (речовина) розчинена в іншій (розчиннику).</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Основи органічної хімії</th>
+        </tr>
+        <tr>
+            <td>Органічні речовини містять вуглець, зазвичай з воднем. Вони утворюють різноманітні сполуки, включаючи вуглеводні та їхні похідні.</td>
+        </tr>
+    </table>
+
+    <table class="table-himik-8cl">
+        <tr>
+            <th>Гази та їхні властивості</th>
+        </tr>
+        <tr>
+            <td>Гази не мають фіксованої форми, їхні молекули рухаються вільно. Основні властивості газів — тиск, об’єм, температура.</td>
+        </tr>
+    </table>
+
+    <h3 align="center">Відео ролики до тем, які можуть бути не зрозумілими, та через відео ви можете перейти на плейлист:</h3>
+
+<div align="center">
+    <div class="video-wrapper" onclick="loadPlaylist(this, 'kr4CTgRYSqw', 'PLsWyMT6uUTrcI_qJKkF8uQeQMHUYDtbSU', 28)">
+        <img src="https://img.youtube.com/vi/kr4CTgRYSqw/maxresdefault.jpg" alt="Обкладинка плейлиста">
+        <div class="play-button">▶</div>
+    </div>
+</div>
+
+<script>
+    function loadPlaylist(element, videoId, playlistId, index) {
+        let iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${videoId}?list=${playlistId}&index=${index}&autoplay=1`;
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+
+        element.innerHTML = ""; // Очищаємо блок
+        element.appendChild(iframe); // Вставляємо відео
+    }
+</script>
+
+<h3 align="center">Пройди тестування, щоб перевірити свої знання</h3>
+
+<div class="container">
+    <div class="a">
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            // Хімія 8 клас
+            {
+                question: "Що таке атом?",
+                options: ["Частинка молекули", "Найменша частинка речовини, яка зберігає її хімічні властивості", "Кислота", "Сполука атомів"],
+                answer: "Найменша частинка речовини, яка зберігає її хімічні властивості"
+            },
+            {
+                question: "Який елемент має хімічний символ H?",
+                options: ["Гелій", "Гідроген", "Оксиген", "Гафній"],
+                answer: "Гідроген"
+            },
+            {
+                question: "Що таке молекула?",
+                options: ["Один атом", "Найменша частинка речовини, яка складається з атомів", "Сполука металів", "Частинка, яка не має хімічних властивостей"],
+                answer: "Найменша частинка речовини, яка складається з атомів"
+            },
+            {
+                question: "Який елемент є основним у складі води?",
+                options: ["Кисень", "Водень", "Азот", "Карбон"],
+                answer: "Водень"
+            },
+            {
+                question: "Яка кількість атомів водню в молекулі води (H₂O)?",
+                options: ["1", "2", "3", "4"],
+                answer: "2"
+            },
+            {
+                question: "Яка з цих реакцій є реакцією горіння?",
+                options: ["2H₂ + O₂ → 2H₂O", "C + O₂ → CO₂", "2H₂O → 2H₂ + O₂", "Na + Cl₂ → NaCl"],
+                answer: "C + O₂ → CO₂"
+            },
+            {
+                question: "Що утворюється при взаємодії кислоти з основою?",
+                options: ["Оксид", "Сіль", "Вода", "Сполука"],
+                answer: "Сіль"
+            },
+            {
+                question: "Як називається процес розкладу речовини на два або більше продуктів?",
+                options: ["Синтез", "Розкладання", "Заміс", "Горіння"],
+                answer: "Розкладання"
+            },
+            {
+                question: "Яка реакція називається реакцією заміщення?",
+                options: ["2Na + Cl₂ → 2NaCl", "Zn + 2HCl → ZnCl₂ + H₂", "H₂O + CO₂ → H₂CO₃", "H₂ + O₂ → H₂O"],
+                answer: "Zn + 2HCl → ZnCl₂ + H₂"
+            },
+            {
+                question: "Як називається процес, у якому дві або більше речовин утворюють нову сполуку?",
+                options: ["Розкладання", "Синтез", "Заміщення", "Дисоціація"],
+                answer: "Синтез"
+            },
+            {
+                question: "Яка з цих речовин є газом при нормальних умовах?",
+                options: ["Оксиген", "Вода", "Сірка", "Залізо"],
+                answer: "Оксиген"
+            },
+            {
+                question: "Що таке кислотний оксид?",
+                options: ["Оксид металу", "Оксид неметалу, який взаємодіє з водою", "Оксид, який утворює луг", "Оксид, що не реагує з водою"],
+                answer: "Оксид неметалу, який взаємодіє з водою"
+            },
+            {
+                question: "Яка з цих речовин є основною при нормальних умовах?",
+                options: ["Кислота", "Луг", "Оксид неметалу", "Оксид металу"],
+                answer: "Луг"
+            },
+            {
+                question: "Яка речовина утворюється при згорянні метану (CH₄)?",
+                options: ["Вода", "Оксид вуглецю (CO)", "Оксид азоту", "Оксид калію"],
+                answer: "Вода"
+            },
+            {
+                question: "Яка з цих речовин є сполукою водню та кисню?",
+                options: ["Вода", "Амоніак", "Сірчана кислота", "Сугар"],
+                answer: "Вода"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion < quizData.length) {
+                document.getElementById("question").innerText = quizData[currentQuestion].question;
+                let optionsHtml = "";
+                quizData[currentQuestion].options.forEach(option => {
+                    optionsHtml += `<button onclick="checkAnswer(this, '${option}')">${option}</button>`;
+                });
+                document.getElementById("options").innerHTML = optionsHtml;
+            } else {
+                document.getElementById("quiz").innerHTML = "<h2>Тест завершено!</h2>";
+                document.getElementById("result").innerText = `Ваш результат: ${score} / ${quizData.length}`;
+            }
+        }
+
+        function checkAnswer(button, answer) {
+            const buttons = document.querySelectorAll(".options button");
+            buttons.forEach(btn => btn.disabled = true);
+            
+            if (answer === quizData[currentQuestion].answer) {
+                button.classList.add("correct");
+                score++;
+            } else {
+                button.classList.add("wrong");
+                buttons.forEach(btn => {
+                    if (btn.innerText === quizData[currentQuestion].answer) {
+                        btn.classList.add("correct");
+                    }
+                });
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1500);
+        }
+
+        loadQuestion();
+    </script>
+</div>
+
+
+</body>
+</html>
